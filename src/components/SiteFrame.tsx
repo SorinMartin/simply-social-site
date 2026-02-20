@@ -15,7 +15,7 @@ export function SiteFrame({ children, pathname = "/" }: SiteFrameProps) {
 
       <Header pathname={pathname} />
 
-      <main className="pb-4 pt-32 sm:pt-36">{children}</main>
+      <main className="pb-4 pt-24 sm:pt-28">{children}</main>
 
       <Footer />
     </div>
