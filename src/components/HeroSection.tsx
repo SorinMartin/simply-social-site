@@ -1,65 +1,73 @@
+import Link from "next/link";
+import { sectors } from "@/data/site";
+
 function DashboardMockup() {
   return (
-    <div className="relative rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_20px_60px_-28px_rgba(15,23,42,0.45)]">
+    <div className="relative rounded-3xl border border-slate-200/90 bg-white p-5 shadow-[0_24px_65px_-34px_rgba(15,23,42,0.5)] sm:p-6">
       <div className="mb-5 flex items-center justify-between border-b border-slate-100 pb-4">
         <div>
           <p className="text-sm font-semibold text-slate-900">Dashboard Social</p>
-          <p className="text-xs text-slate-500">Saptamana curenta</p>
+          <p className="text-xs text-slate-500">Luna curenta</p>
         </div>
-        <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-          +14% engagement
+        <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+          +27% interactiuni
         </span>
       </div>
 
       <div className="space-y-3">
         <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4">
           <div className="mb-2 flex items-center justify-between text-xs text-slate-500">
-            <span>Postari programate</span>
-            <span>12 / luna</span>
+            <span>Calendar postari</span>
+            <span>16 / 20 finalizate</span>
           </div>
           <div className="h-2 rounded-full bg-slate-200">
-            <div className="h-2 w-3/4 rounded-full bg-slate-900" />
+            <div className="h-2 w-4/5 rounded-full bg-slate-900" />
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-2xl border border-slate-100 p-4">
-            <p className="text-xs text-slate-500">Reach</p>
-            <p className="mt-1 text-xl font-semibold text-slate-900">48.2K</p>
+            <p className="text-xs text-slate-500">Reach total</p>
+            <p className="mt-1 text-xl font-semibold text-slate-900">61.4K</p>
           </div>
           <div className="rounded-2xl border border-slate-100 p-4">
             <p className="text-xs text-slate-500">Lead-uri</p>
-            <p className="mt-1 text-xl font-semibold text-slate-900">126</p>
+            <p className="mt-1 text-xl font-semibold text-slate-900">184</p>
           </div>
         </div>
 
         <div className="rounded-2xl border border-slate-100 p-4">
-          <p className="mb-3 text-xs text-slate-500">Canale active</p>
-          <div className="flex flex-wrap gap-2">
-            {['Facebook', 'Instagram', 'TikTok', 'LinkedIn'].map((channel) => (
-              <span
-                key={channel}
-                className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+          <p className="mb-3 text-xs text-slate-500">Status canale</p>
+          <div className="space-y-2">
+            {[
+              { channel: "Instagram", status: "Programat" },
+              { channel: "Facebook", status: "Publicat" },
+              { channel: "TikTok", status: "In editare" },
+            ].map((item) => (
+              <div
+                key={item.channel}
+                className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 text-xs"
               >
-                {channel}
-              </span>
+                <span className="text-slate-600">{item.channel}</span>
+                <span className="font-medium text-slate-800">{item.status}</span>
+              </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="pointer-events-none absolute -right-4 -top-4 h-20 w-20 rounded-full bg-emerald-100/60 blur-2xl" />
+      <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-emerald-100/70 blur-2xl" />
     </div>
   );
 }
 
 export function HeroSection() {
   return (
-    <section id="acasa" className="mx-auto w-full max-w-6xl px-4 pt-32 sm:px-6 lg:px-8">
-      <div className="grid items-center gap-10 rounded-3xl border border-slate-200/80 bg-white/80 p-6 shadow-sm backdrop-blur md:p-10 lg:grid-cols-[1.08fr_0.92fr]">
+    <section id="acasa" className="mx-auto w-full max-w-6xl px-4 pt-6 sm:px-6 lg:px-8">
+      <div className="grid items-center gap-10 rounded-3xl border border-slate-200/80 bg-white/85 p-6 shadow-[0_24px_60px_-34px_rgba(15,23,42,0.4)] backdrop-blur md:p-10 lg:grid-cols-[1.08fr_0.92fr]">
         <div className="space-y-6">
           <p className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
-            Fara bullshit de agentie
+            Fara promisiuni false
           </p>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
@@ -71,23 +79,34 @@ export function HeroSection() {
             business.
           </p>
 
-          <p className="text-sm font-medium text-slate-700">
+          <p className="text-sm font-semibold text-slate-700">
             Postari constante. Imagine profesionala. Rezultate clare.
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800"
             >
               Programeaza o discutie
-            </a>
-            <a
-              href="#servicii"
+            </Link>
+            <Link
+              href="/servicii"
               className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
             >
               Vezi serviciile
-            </a>
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-2 pt-2">
+            {sectors.map((sector) => (
+              <span
+                key={sector}
+                className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600"
+              >
+                {sector}
+              </span>
+            ))}
           </div>
         </div>
 

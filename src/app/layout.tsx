@@ -8,13 +8,13 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://simply-social-site.vercel.app"),
+  metadataBase: new URL("https://www.simplysocial.ro"),
   title: {
     default: "Simply Social | Agentie Social Media",
     template: "%s | Simply Social",
   },
   description:
-    "Simply Social este agentia de social media pentru afaceri locale care vor continut constant, imagine profesionala si rezultate clare.",
+    "Simply Social ajuta afacerile locale cu social media simplu: continut constant, imagine profesionala si rezultate clare.",
   keywords: [
     "agentie social media",
     "marketing social media",
@@ -26,11 +26,16 @@ export const metadata: Metadata = {
     title: "Simply Social | Agentie Social Media",
     description:
       "Postari constante. Imagine profesionala. Rezultate clare pentru afaceri locale.",
-    url: "https://simply-social-site.vercel.app",
+    url: "https://www.simplysocial.ro",
     siteName: "Simply Social",
     locale: "ro_RO",
     type: "website",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  category: "marketing",
   alternates: {
     canonical: "/",
   },

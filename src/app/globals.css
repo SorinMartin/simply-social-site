@@ -31,8 +31,25 @@ body {
     var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), "Inter", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
   background: rgba(15, 23, 42, 0.15);
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(15, 23, 42, 0.45);
+  outline-offset: 2px;
 }
