@@ -13,7 +13,7 @@ export function ServicesSection() {
               Pachetul nostru
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Un singur pachet, construit pentru consistenta.
+              O oferta simpla, cu rezultat vizibil in fiecare luna.
             </h2>
           </div>
           <Link
@@ -46,7 +46,7 @@ export function ServicesSection() {
             href="/contact"
             className="mt-8 inline-flex w-fit rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
           >
-            Solicita activarea pachetului
+            Solicita pachetul
           </Link>
         </article>
       </div>

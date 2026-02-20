@@ -70,16 +70,17 @@ export function HeroSection() {
           </p>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-            Paginile tale trebuie sa arate ca afacerea este vie.
+            O prezenta social media constanta, care inspira incredere.
           </h1>
 
           <p className="max-w-2xl text-pretty text-lg text-slate-600">
-            Facem 20 de postari pe luna si le publicam pe Facebook si Instagram,
-            ca oamenii sa vada ca afacerea ta este activa, serioasa si prezenta.
+            Gestionam 20 de postari pe luna si publicam pe Facebook si
+            Instagram, astfel incat brandul tau sa comunice elegant, clar si
+            profesionist.
           </p>
 
           <p className="text-sm font-semibold text-slate-700">
-            Un singur pachet. Un singur pret. Claritate totala.
+            Un serviciu clar, cu executie impecabila: 299 EUR/luna.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -87,13 +88,13 @@ export function HeroSection() {
               href="/contact"
               className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              Vreau pachetul de 299 EUR
+              Programeaza o discutie
             </Link>
             <Link
               href="/servicii"
               className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
             >
-              Vezi ce include
+              Descopera pachetul
             </Link>
           </div>
 

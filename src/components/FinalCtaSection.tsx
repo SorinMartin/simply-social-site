@@ -11,8 +11,8 @@ export function FinalCtaSection() {
           299 EUR/luna. 20 postari. Facebook + Instagram.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-300">
-          Scopul este simplu: cand cineva intra pe paginile tale, sa vada imediat
-          ca afacerea este activa, serioasa si in miscare.
+          Construim o prezenta social media care arata profesional, comunica
+          constant si sustine imaginea afacerii tale in fiecare luna.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

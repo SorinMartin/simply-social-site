@@ -31,8 +31,9 @@ export default function ServicesPage() {
             Pachet unic. 299 EUR/luna.
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            Nu oferim 5 variante care te incurca. Avem un singur pachet prin
-            care facem paginile tale sa para active, actuale si profesioniste.
+            Un serviciu clar, fara complexitate inutila: continut constant,
+            executie profesionista si prezenta social media aliniata cu
+            standardul afacerii tale.
           </p>
         </div>
       </section>
@@ -99,8 +100,8 @@ export default function ServicesPage() {
             </div>
 
             <p className="mt-6 text-sm leading-7 text-slate-600">
-              Daca vrei ca oamenii sa vada ca afacerea ta functioneaza si este
-              prezenta online, acest pachet este construit exact pentru asta.
+              Este potrivit pentru afaceri care vor o comunicare constanta,
+              eleganta si usor de recunoscut in social media.
             </p>
           </div>
         </div>

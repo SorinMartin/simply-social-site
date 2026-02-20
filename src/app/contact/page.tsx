@@ -45,8 +45,9 @@ export default function ContactPage() {
             Hai sa activam pachetul tau de 299 EUR/luna.
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            Spune-ne cu ce se ocupa afacerea ta, iar noi pregatim continutul ca
-            paginile tale de Facebook si Instagram sa arate constant active.
+            Spune-ne ce tip de business ai, iar noi pregatim continutul astfel
+            incat prezenta ta pe Facebook si Instagram sa fie coerenta,
+            constanta si profesionala.
           </p>
         </div>
       </section>

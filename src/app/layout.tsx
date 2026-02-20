@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Simply Social",
   },
   description:
-    "Pachet unic Simply Social: 299 EUR/luna pentru 20 de postari pe Facebook si Instagram, ca afacerea ta sa para activa si profesionista.",
+    "Simply Social ofera un pachet unic: 299 EUR/luna pentru 20 de postari pe Facebook si Instagram, cu comunicare constanta si imagine profesionala.",
   keywords: [
     "agentie social media",
     "marketing social media",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Simply Social | Agentie Social Media",
     description:
-      "299 EUR/luna, 20 postari pe Facebook si Instagram. Paginile afacerii tale raman active si actuale.",
+      "20 postari/luna pe Facebook si Instagram, intr-un format clar si profesionist, la 299 EUR/luna.",
     url: "https://www.simplysocial.ro",
     siteName: "Simply Social",
     locale: "ro_RO",

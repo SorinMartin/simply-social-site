@@ -15,27 +15,27 @@ export type ServicePackage = {
 
 export const problemPoints = [
   {
-    title: "Pagina pare abandonata",
+    title: "Comunicare in salturi",
     description:
-      "Cand ultima postare este veche, oamenii cred ca afacerea nu mai este activa.",
+      "Fara un ritm de publicare, brandul devine greu de remarcat in fluxul zilnic al clientilor.",
   },
   {
-    title: "Imagine neuniforma",
+    title: "Imagine nealiniata",
     description:
-      "Fara design si mesaj coerent, brandul pierde incredere chiar inainte de primul contact.",
+      "Cand vizualul si mesajul variaza de la o postare la alta, perceptia de profesionalism scade.",
   },
   {
-    title: "Clientii nu inteleg ce faci",
+    title: "Prezentare neclara a serviciilor",
     description:
-      "Daca nu comunici constant, publicul nu vede clar serviciile, rezultatele si seriozitatea ta.",
+      "Publicul are nevoie sa vada constant ce oferi, cum lucrezi si de ce merita sa te aleaga.",
   },
 ] as const;
 
 export const solutionPoints = [
-  "20 postari/luna, in ritm constant",
-  "Publicare doar pe Facebook si Instagram",
-  "Design si copy care reflecta afacerea ta",
-  "Paginile tale arata active, actuale si profesioniste",
+  "20 postari/luna intr-un calendar clar",
+  "Publicare dedicata pe Facebook si Instagram",
+  "Design si copy aliniate cu identitatea afacerii",
+  "Prezenta constanta care transmite incredere",
 ] as const;
 
 export const processSteps = [
@@ -66,7 +66,7 @@ export const servicePackages: ServicePackage[] = [
     name: "PACHET UNIC",
     price: "299 EUR/luna",
     description:
-      "Un singur pachet, simplu si clar, pentru afaceri care vor prezenta constanta online.",
+      "Administrare social media simpla si completa pentru o prezenta eleganta si constanta.",
     highlighted: true,
     features: [
       "20 postari/luna",
@@ -74,7 +74,7 @@ export const servicePackages: ServicePackage[] = [
       "Design inclus",
       "Copy inclus",
       "Calendar lunar de continut",
-      "Scop: pagina activa, actuala, profesionista",
+      "Comunicare constanta, profesionala si relevanta",
     ],
   },
 ];

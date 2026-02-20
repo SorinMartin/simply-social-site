@@ -9,7 +9,7 @@ export function ProblemSection() {
             Problema
           </p>
           <h2 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-            De ce majoritatea afacerilor nu cresc online?
+            Ce reduce impactul unei prezente online?
           </h2>
         </div>
 
