@@ -4,7 +4,7 @@ import { SiteFrame } from "@/components/SiteFrame";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contacteaza Simply Social pentru o discutie despre strategia ta de social media.",
+    "Contacteaza Simply Social pentru pachetul unic de 299 EUR/luna: 20 postari pe Facebook si Instagram.",
 };
 
 type ContactItem = {
@@ -14,6 +14,10 @@ type ContactItem = {
 };
 
 const contactItems: ContactItem[] = [
+  {
+    title: "Pachet",
+    value: "299 EUR/luna | 20 postari | Facebook + Instagram",
+  },
   {
     title: "Email",
     value: "contact@simplysocial.ro",
@@ -27,7 +31,7 @@ const contactItems: ContactItem[] = [
     title: "Raspuns estimat",
     value: "In maximum 24 de ore lucratoare",
   },
-] as const;
+];
 
 export default function ContactPage() {
   return (
@@ -38,11 +42,11 @@ export default function ContactPage() {
             Contact
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-            Hai sa discutam despre cresterea ta online.
+            Hai sa activam pachetul tau de 299 EUR/luna.
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            Trimite-ne cateva detalii despre afacerea ta si revenim rapid cu un
-            plan simplu si realist.
+            Spune-ne cu ce se ocupa afacerea ta, iar noi pregatim continutul ca
+            paginile tale de Facebook si Instagram sa arate constant active.
           </p>
         </div>
       </section>
@@ -111,7 +115,7 @@ export default function ContactPage() {
                   name="message"
                   rows={5}
                   className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors focus:border-slate-500"
-                  placeholder="Spune-ne ce obiective ai si cu ce te putem ajuta."
+                  placeholder="Spune-ne ce faci si din ce data vrei sa incepem publicarea pe Facebook si Instagram."
                 />
               </label>
             </div>

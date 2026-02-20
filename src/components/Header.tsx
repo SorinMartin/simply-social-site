@@ -20,7 +20,7 @@ function isActive(pathname: string, href: string) {
 
 export function Header({ pathname = "/" }: HeaderProps) {
   return (
-    <header className="fixed inset-x-0 top-4 z-50 px-4 sm:px-6">
+    <header className="fixed inset-x-0 top-4 z-50 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto grid w-full max-w-6xl grid-cols-[1fr_auto] items-center gap-3 rounded-2xl border border-slate-200/70 bg-white/88 px-4 py-3 shadow-[0_18px_44px_-24px_rgba(15,23,42,0.35)] backdrop-blur-xl md:grid-cols-[1fr_auto_1fr] md:px-6">
         <div className="justify-self-start">
           <Link href="/" aria-label="Simply Social - Acasa">

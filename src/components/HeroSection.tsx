@@ -6,43 +6,42 @@ function DashboardMockup() {
     <div className="relative rounded-3xl border border-slate-200/90 bg-white p-5 shadow-[0_24px_65px_-34px_rgba(15,23,42,0.5)] sm:p-6">
       <div className="mb-5 flex items-center justify-between border-b border-slate-100 pb-4">
         <div>
-          <p className="text-sm font-semibold text-slate-900">Dashboard Social</p>
-          <p className="text-xs text-slate-500">Luna curenta</p>
+          <p className="text-sm font-semibold text-slate-900">Pachet activ</p>
+          <p className="text-xs text-slate-500">299 EUR/luna</p>
         </div>
         <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-          +27% interactiuni
+          Facebook + Instagram
         </span>
       </div>
 
       <div className="space-y-3">
         <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4">
           <div className="mb-2 flex items-center justify-between text-xs text-slate-500">
-            <span>Calendar postari</span>
-            <span>16 / 20 finalizate</span>
+            <span>Postari lunare</span>
+            <span>20 / 20 programate</span>
           </div>
           <div className="h-2 rounded-full bg-slate-200">
-            <div className="h-2 w-4/5 rounded-full bg-slate-900" />
+            <div className="h-2 w-full rounded-full bg-slate-900" />
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-2xl border border-slate-100 p-4">
-            <p className="text-xs text-slate-500">Reach total</p>
-            <p className="mt-1 text-xl font-semibold text-slate-900">61.4K</p>
+            <p className="text-xs text-slate-500">Canale active</p>
+            <p className="mt-1 text-xl font-semibold text-slate-900">2</p>
           </div>
           <div className="rounded-2xl border border-slate-100 p-4">
-            <p className="text-xs text-slate-500">Lead-uri</p>
-            <p className="mt-1 text-xl font-semibold text-slate-900">184</p>
+            <p className="text-xs text-slate-500">Frecventa</p>
+            <p className="mt-1 text-xl font-semibold text-slate-900">Constanta</p>
           </div>
         </div>
 
         <div className="rounded-2xl border border-slate-100 p-4">
-          <p className="mb-3 text-xs text-slate-500">Status canale</p>
+          <p className="mb-3 text-xs text-slate-500">Status publicare</p>
           <div className="space-y-2">
             {[
               { channel: "Instagram", status: "Programat" },
               { channel: "Facebook", status: "Publicat" },
-              { channel: "TikTok", status: "In editare" },
             ].map((item) => (
               <div
                 key={item.channel}
@@ -67,20 +66,20 @@ export function HeroSection() {
       <div className="grid items-center gap-10 rounded-3xl border border-slate-200/80 bg-white/85 p-6 shadow-[0_24px_60px_-34px_rgba(15,23,42,0.4)] backdrop-blur md:p-10 lg:grid-cols-[1.08fr_0.92fr]">
         <div className="space-y-6">
           <p className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
-            Fara promisiuni false
+            Pachet unic: 299 EUR/luna
           </p>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-            Social media simplificat pentru afacerea ta.
+            Paginile tale trebuie sa arate ca afacerea este vie.
           </h1>
 
           <p className="max-w-2xl text-pretty text-lg text-slate-600">
-            Ne ocupam de continut, postari si crestere, ca tu sa te ocupi de
-            business.
+            Facem 20 de postari pe luna si le publicam pe Facebook si Instagram,
+            ca oamenii sa vada ca afacerea ta este activa, serioasa si prezenta.
           </p>
 
           <p className="text-sm font-semibold text-slate-700">
-            Postari constante. Imagine profesionala. Rezultate clare.
+            Un singur pachet. Un singur pret. Claritate totala.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -88,13 +87,13 @@ export function HeroSection() {
               href="/contact"
               className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              Programeaza o discutie
+              Vreau pachetul de 299 EUR
             </Link>
             <Link
               href="/servicii"
               className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
             >
-              Vezi serviciile
+              Vezi ce include
             </Link>
           </div>
 

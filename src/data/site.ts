@@ -8,88 +8,73 @@ export const navItems = [
 export type ServicePackage = {
   name: string;
   description: string;
+  price: string;
   features: string[];
   highlighted?: boolean;
 };
 
 export const problemPoints = [
   {
-    title: "Posteaza rar si haotic",
+    title: "Pagina pare abandonata",
     description:
-      "Fara ritm clar de publicare, contul ramane invizibil si fara rezultate constante.",
+      "Cand ultima postare este veche, oamenii cred ca afacerea nu mai este activa.",
   },
   {
-    title: "Design amator",
+    title: "Imagine neuniforma",
     description:
-      "Un vizual neuniform reduce increderea si face brandul sa para neprofesionist.",
+      "Fara design si mesaj coerent, brandul pierde incredere chiar inainte de primul contact.",
   },
   {
-    title: "Fara strategie",
+    title: "Clientii nu inteleg ce faci",
     description:
-      "Continutul fara obiective clare aduce activitate, dar nu aduce clienti.",
+      "Daca nu comunici constant, publicul nu vede clar serviciile, rezultatele si seriozitatea ta.",
   },
 ] as const;
 
 export const solutionPoints = [
-  "Plan lunar de continut",
-  "Design profesionist",
-  "Programare automata",
-  "Administrare si raspuns mesaje",
+  "20 postari/luna, in ritm constant",
+  "Publicare doar pe Facebook si Instagram",
+  "Design si copy care reflecta afacerea ta",
+  "Paginile tale arata active, actuale si profesioniste",
 ] as const;
 
 export const processSteps = [
   {
     title: "Discutie initiala",
     description:
-      "Intelegem oferta, clientii si obiectivele comerciale ale afacerii tale.",
+      "Intelegem business-ul tau, serviciile si tipul de clienti pe care vrei sa ii atragi.",
   },
   {
-    title: "Strategie si plan",
+    title: "Plan lunar",
     description:
-      "Definim directia de continut, mesajele cheie si calendarul de publicare.",
+      "Stabilim calendarul pentru cele 20 de postari si directia vizuala pentru luna urmatoare.",
   },
   {
     title: "Creare continut",
     description:
-      "Producem design-uri si copy clare, aliniate cu brandul si audienta ta.",
+      "Pregatim design-ul si textele astfel incat paginile sa reflecte clar activitatea afacerii.",
   },
   {
-    title: "Publicare & optimizare",
+    title: "Publicare pe Facebook & Instagram",
     description:
-      "Publicam, monitorizam rezultatele si ajustam lunar pentru performanta mai buna.",
+      "Programam si publicam tot continutul, ca paginile tale sa ramana constant active.",
   },
 ] as const;
 
 export const servicePackages: ServicePackage[] = [
   {
-    name: "BASIC",
-    description: "Pentru afaceri locale care au nevoie de consistenta.",
-    features: [
-      "8 postari/luna",
-      "Design inclus",
-      "Copy inclus",
-      "Programare postari",
-    ],
-  },
-  {
-    name: "PRO",
-    description: "Pentru firme care vor prezenta profesionala si interactiune activa.",
+    name: "PACHET UNIC",
+    price: "299 EUR/luna",
+    description:
+      "Un singur pachet, simplu si clar, pentru afaceri care vor prezenta constanta online.",
     highlighted: true,
     features: [
-      "12 postari/luna",
-      "Reel-uri incluse",
-      "Administrare mesaje",
-      "Strategie lunara",
-    ],
-  },
-  {
-    name: "PREMIUM",
-    description: "Pentru branduri care scaleaza si urmaresc conversii masurabile.",
-    features: [
-      "16+ postari",
-      "Ads management",
-      "Optimizare conversii",
-      "Raport lunar detaliat",
+      "20 postari/luna",
+      "Publicare pe Facebook si Instagram",
+      "Design inclus",
+      "Copy inclus",
+      "Calendar lunar de continut",
+      "Scop: pagina activa, actuala, profesionista",
     ],
   },
 ];
