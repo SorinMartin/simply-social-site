@@ -40,8 +40,8 @@ function DashboardMockup() {
           <p className="mb-3 text-xs text-slate-500">Status publicare</p>
           <div className="space-y-2">
             {[
-              { channel: "📸 Instagram", status: "✅ Programat" },
-              { channel: "📘 Facebook", status: "🟢 Publicat" },
+              { channel: "Instagram", status: "✅ Programat" },
+              { channel: "Facebook", status: "🟢 Publicat" },
             ].map((item) => (
               <div
                 key={item.channel}

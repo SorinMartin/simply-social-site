@@ -11,8 +11,8 @@ const links = [
 ] as const;
 
 const channels = [
-  { label: "📘 Facebook", href: "https://facebook.com" },
-  { label: "📸 Instagram", href: "https://instagram.com" },
+  { label: "Facebook", href: "https://facebook.com" },
+  { label: "Instagram", href: "https://instagram.com" },
 ] as const;
 
 export function Footer() {
