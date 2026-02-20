@@ -1,20 +1,39 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const geist = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Simply Social",
-  description: "Platforma care îți organizează conținutul social într-un singur loc.",
+  metadataBase: new URL("https://simply-social-site.vercel.app"),
+  title: {
+    default: "Simply Social | Agentie Social Media",
+    template: "%s | Simply Social",
+  },
+  description:
+    "Simply Social este agentia de social media pentru afaceri locale care vor continut constant, imagine profesionala si rezultate clare.",
+  keywords: [
+    "agentie social media",
+    "marketing social media",
+    "administrare social media",
+    "postari social media",
+    "simply social",
+  ],
+  openGraph: {
+    title: "Simply Social | Agentie Social Media",
+    description:
+      "Postari constante. Imagine profesionala. Rezultate clare pentru afaceri locale.",
+    url: "https://simply-social-site.vercel.app",
+    siteName: "Simply Social",
+    locale: "ro_RO",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -24,11 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
-      <body
-        className={`${dmSans.variable} ${spaceGrotesk.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${geist.variable} antialiased`}>{children}</body>
     </html>
   );
 }
