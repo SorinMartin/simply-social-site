@@ -40,8 +40,8 @@ function DashboardMockup() {
           <p className="mb-3 text-xs text-slate-500">Status publicare</p>
           <div className="space-y-2">
             {[
-              { channel: "Instagram", status: "Programat" },
-              { channel: "Facebook", status: "Publicat" },
+              { channel: "📸 Instagram", status: "✅ Programat" },
+              { channel: "📘 Facebook", status: "🟢 Publicat" },
             ].map((item) => (
               <div
                 key={item.channel}
@@ -66,7 +66,7 @@ export function HeroSection() {
       <div className="grid items-center gap-10 rounded-3xl border border-slate-200/80 bg-white/85 p-6 shadow-[0_24px_60px_-34px_rgba(15,23,42,0.4)] backdrop-blur md:p-10 lg:grid-cols-[1.08fr_0.92fr]">
         <div className="space-y-6">
           <p className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
-            Pachet unic: 299 EUR/luna
+            ✨ Pachet unic: 299 EUR/luna
           </p>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
@@ -88,13 +88,13 @@ export function HeroSection() {
               href="/contact"
               className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              Programeaza o discutie
+              Programeaza o discutie 🚀
             </Link>
             <Link
               href="/servicii"
               className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
             >
-              Descopera pachetul
+              Descopera pachetul 📦
             </Link>
           </div>
 

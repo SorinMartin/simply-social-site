@@ -3,6 +3,7 @@ import { servicePackages } from "@/data/site";
 
 export function ServicesSection() {
   const pack = servicePackages[0];
+  const featureIcons = ["🗓️", "📱", "🎨", "✍️", "🧩", "✅"];
 
   return (
     <section id="servicii" className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
@@ -26,7 +27,7 @@ export function ServicesSection() {
 
         <article className="mx-auto max-w-3xl rounded-3xl border border-emerald-300 bg-gradient-to-b from-emerald-50 to-white p-7 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
           <p className="text-sm font-semibold tracking-[0.18em] text-slate-500">
-            {pack.name}
+            ⭐ {pack.name}
           </p>
           <p className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">
             {pack.price}
@@ -34,9 +35,9 @@ export function ServicesSection() {
           <p className="mt-3 text-sm leading-7 text-slate-600">{pack.description}</p>
 
           <ul className="mt-6 grid gap-3 text-slate-700 sm:grid-cols-2">
-            {pack.features.map((feature) => (
+            {pack.features.map((feature, index) => (
               <li key={feature} className="flex items-start gap-2 text-sm">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-500" />
+                <span aria-hidden="true">{featureIcons[index] ?? "•"}</span>
                 <span>{feature}</span>
               </li>
             ))}

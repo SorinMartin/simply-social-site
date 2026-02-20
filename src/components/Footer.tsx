@@ -11,8 +11,8 @@ const links = [
 ] as const;
 
 const channels = [
-  { label: "Facebook", href: "https://facebook.com" },
-  { label: "Instagram", href: "https://instagram.com" },
+  { label: "📘 Facebook", href: "https://facebook.com" },
+  { label: "📸 Instagram", href: "https://instagram.com" },
 ] as const;
 
 export function Footer() {
@@ -30,13 +30,13 @@ export function Footer() {
               href="mailto:contact@simplysocial.ro"
               className="inline-flex rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:text-slate-900"
             >
-              contact@simplysocial.ro
+              ✉️ contact@simplysocial.ro
             </a>
           </div>
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Navigare
+              🧭 Navigare
             </p>
             <nav className="mt-4 space-y-2">
               {links.map((link) => (
@@ -53,7 +53,7 @@ export function Footer() {
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Pachet Unic
+              ⭐ Pachet Unic
             </p>
             <p className="mt-4 text-2xl font-semibold tracking-tight text-slate-900">
               299 EUR/luna

@@ -19,7 +19,9 @@ export function ProblemSection() {
               key={problem.title}
               className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="mb-4 h-10 w-10 rounded-2xl border border-slate-200 bg-slate-50" />
+              <div className="mb-4 grid h-10 w-10 place-items-center rounded-2xl border border-slate-200 bg-slate-50 text-lg">
+                <span aria-hidden="true">{problem.icon}</span>
+              </div>
               <h3 className="text-lg font-semibold text-slate-900">{problem.title}</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 {problem.description}

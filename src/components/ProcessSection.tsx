@@ -31,9 +31,14 @@ export function ProcessSection() {
               key={step.title}
               className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
             >
-              <p className="text-sm font-semibold text-slate-400">
-                {String(index + 1).padStart(2, "0")}
-              </p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold text-slate-400">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+                <span className="text-lg" aria-hidden="true">
+                  {step.icon}
+                </span>
+              </div>
               <h3 className="mt-3 text-base font-semibold text-slate-900">
                 {step.title}
               </h3>

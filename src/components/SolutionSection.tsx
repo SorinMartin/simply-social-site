@@ -16,13 +16,20 @@ export function SolutionSection() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {solutionPoints.map((item, index) => (
             <article
-              key={item}
+              key={item.title}
               className="group rounded-2xl border border-slate-200 bg-slate-50/70 p-5 transition-all duration-200 hover:border-slate-300 hover:bg-white"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
-                0{index + 1}
+              <div className="flex items-center gap-2">
+                <span className="text-lg" aria-hidden="true">
+                  {item.icon}
+                </span>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                  0{index + 1}
+                </p>
+              </div>
+              <p className="mt-2 text-base font-semibold text-slate-800">
+                {item.title}
               </p>
-              <p className="mt-2 text-base font-semibold text-slate-800">{item}</p>
             </article>
           ))}
         </div>
