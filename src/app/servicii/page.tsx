@@ -1,127 +1,194 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFrame } from "@/components/SiteFrame";
-import { sectors, servicePackages } from "@/data/site";
+import { Reveal, RevealText } from "@/components/Reveal";
+import { faqs, sectors, serviceInclusions, servicePackages } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Pachet Social Media 299 EUR/luna",
+  title: "Servicii — Pachet social media 299 EUR/luna",
   description:
-    "Pachet unic Simply Social: 20 postari/luna pe Facebook si Instagram, la 299 EUR/luna.",
+    "Detalii complete despre pachetul unic Simply Social: 20 postari pe luna, design, copy si publicare pe Facebook si Instagram.",
 };
-
-const includedItems = [
-  "20 postari/luna (design + copy)",
-  "Publicare pe Facebook si Instagram",
-  "Calendar lunar stabilit din timp",
-  "Continut care reflecta activitatea reala a afacerii",
-  "Prezenta constanta care inspira incredere",
-] as const;
 
 export default function ServicesPage() {
   const pack = servicePackages[0];
 
   return (
     <SiteFrame pathname="/servicii">
-      <section className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-slate-200/80 bg-white p-7 shadow-sm sm:p-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-            Servicii Simply Social
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-            Pachet unic. 299 EUR/luna.
+      {/* Hero */}
+      <section className="relative overflow-hidden pt-40">
+        <div
+          aria-hidden
+          className="blob left-[-10%] top-[20%] h-[340px] w-[340px] bg-[var(--accent)]/10"
+        />
+        <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12">
+          <p className="eyebrow">02 · Servicii</p>
+          <h1 className="mt-8 font-display text-[clamp(3rem,10vw,10rem)]">
+            <span className="block">
+              <RevealText text="un pachet." />
+            </span>
+            <span className="block font-serif-italic text-[var(--fg-muted)]">
+              <RevealText text="tot ce ai nevoie." delay={0.15} />
+            </span>
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            Un serviciu clar, fara complexitate inutila: continut constant,
-            executie profesionista si prezenta social media aliniata cu
-            standardul afacerii tale.
+          <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--fg-muted)]">
+            Am pastrat un singur pachet, lunar, fara nivele sau surprize. Asa
+            stim amandoi ce livram si tu stii exact ce platesti.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <article className="rounded-3xl border border-emerald-300 bg-gradient-to-b from-emerald-50 to-white p-7 shadow-sm sm:p-10">
-          <p className="text-sm font-semibold tracking-[0.18em] text-slate-500">
-            {pack.name}
-          </p>
-          <p className="mt-3 text-4xl font-semibold tracking-tight text-slate-900">
-            {pack.price}
-          </p>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-            {pack.description}
-          </p>
+      {/* Price card */}
+      <section className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 lg:px-12">
+        <Reveal className="overflow-hidden rounded-3xl border border-[var(--line-strong)] bg-[var(--bg-elevated)]">
+          <div className="grid lg:grid-cols-[1.1fr_1fr]">
+            <div className="border-b border-[var(--line)] p-8 lg:border-b-0 lg:border-r lg:p-14">
+              <div className="flex items-baseline gap-3">
+                <span className="font-mono text-xs text-[var(--fg-muted)]">
+                  01
+                </span>
+                <span className="eyebrow">{pack.name}</span>
+              </div>
+              <p className="mt-8 font-serif-italic text-[clamp(5rem,14vw,11rem)] leading-none">
+                299<span className="text-[var(--fg-muted)]">€</span>
+              </p>
+              <p className="mt-2 font-mono text-xs text-[var(--fg-muted)]">
+                per luna · fara TVA · fara contract pe termen lung
+              </p>
+              <p className="mt-8 max-w-md text-base leading-7 text-[var(--fg-muted)]">
+                {pack.description}
+              </p>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <Link href="/contact" className="btn-primary">
+                  Solicita pachetul →
+                </Link>
+                <Link href="/proces" className="btn-ghost">
+                  Vezi cum lucram
+                </Link>
+              </div>
+            </div>
 
-          <ul className="mt-7 grid gap-3 text-slate-700 sm:grid-cols-2">
-            {pack.features.map((feature) => (
-              <li key={feature} className="flex items-start gap-2 text-sm">
-                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-500" />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-
-          <Link
-            href="/contact"
-            className="mt-8 inline-flex w-fit rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900"
-          >
-            Solicita pachetul de 299 EUR
-          </Link>
-        </article>
+            <div className="p-8 lg:p-14">
+              <p className="eyebrow">Include</p>
+              <ul className="mt-8 space-y-0">
+                {pack.features.map((f, i) => (
+                  <li
+                    key={f}
+                    className="grid grid-cols-[auto_1fr_auto] items-center gap-6 border-t border-[var(--line)] py-4 last:border-b"
+                  >
+                    <span className="font-mono text-[10px] text-[var(--fg-dim)]">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-base text-[var(--fg)]">{f}</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
-        <div className="grid gap-5 rounded-3xl border border-slate-200/80 bg-white p-7 shadow-sm md:grid-cols-[1.1fr_0.9fr] sm:p-10">
-          <div>
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Ce obtii concret in fiecare luna
-            </h2>
-            <ul className="mt-6 space-y-3">
-              {includedItems.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-600" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+      {/* Inclusions */}
+      <section className="border-y border-[var(--line)] bg-[var(--bg-elevated)]">
+        <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="eyebrow">Ce primesti lunar</p>
+              <h2 className="mt-6 font-display text-5xl sm:text-6xl">
+                <RevealText text="sase livrabile," />{" "}
+                <span className="font-serif-italic">
+                  <RevealText text="un singur pret." delay={0.1} />
+                </span>
+              </h2>
+            </div>
           </div>
 
+          <div className="mt-20 grid gap-px bg-[var(--line)] sm:grid-cols-2 lg:grid-cols-3">
+            {serviceInclusions.map((item, i) => (
+              <Reveal
+                key={item.index}
+                delay={i * 0.05}
+                className="bg-[var(--bg-elevated)] p-8 transition-colors hover:bg-[var(--bg)] sm:p-10"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-xs text-[var(--fg-dim)]">
+                    {item.index}
+                  </span>
+                  <span className="h-px flex-1 bg-[var(--line)]" />
+                </div>
+                <h3 className="mt-8 font-display text-2xl text-[var(--fg)] sm:text-3xl">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[var(--fg-muted)]">
+                  {item.body}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* For whom */}
+      <section className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
+        <div className="grid gap-16 lg:grid-cols-[0.5fr_1fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Pentru cine este
+            <p className="eyebrow">Pentru cine</p>
+            <h2 className="mt-6 font-display text-5xl">
+              <span className="font-serif-italic">afaceri</span> care{" "}
+              <span className="font-serif-italic">vor sa fie vazute</span>.
+            </h2>
+          </div>
+          <div>
+            <p className="text-lg leading-8 text-[var(--fg-muted)]">
+              Pachetul este construit pentru business-uri locale care au un
+              serviciu clar si un public definit, dar nu au timp sa gestioneze
+              saptamanal prezenta online.
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {sectors.map((sector) => (
+            <div className="mt-10 flex flex-wrap gap-2">
+              {sectors.map((s) => (
                 <span
-                  key={sector}
-                  className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600"
+                  key={s}
+                  className="rounded-full border border-[var(--line-strong)] px-4 py-2 text-xs text-[var(--fg)]"
                 >
-                  {sector}
+                  {s}
                 </span>
               ))}
             </div>
-
-            <p className="mt-6 text-sm leading-7 text-slate-600">
-              Este potrivit pentru afaceri care vor o comunicare constanta,
-              eleganta si usor de recunoscut in social media.
-            </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-slate-800 bg-slate-900 px-6 py-10 text-center shadow-sm sm:px-10">
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Vrei sa incepem chiar luna asta?
+      {/* FAQ */}
+      <section className="border-t border-[var(--line)] bg-[var(--bg-elevated)]">
+        <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
+          <p className="eyebrow">Intrebari frecvente</p>
+          <h2 className="mt-6 font-display text-5xl sm:text-6xl">
+            <span className="font-serif-italic">raspunsuri</span>, direct.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-300">
-            Scrie-ne si activam pachetul unic de 299 EUR/luna pentru Facebook si
-            Instagram.
-          </p>
-          <Link
-            href="/contact"
-            className="mt-7 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-all hover:-translate-y-0.5 hover:bg-slate-100"
-          >
-            Activeaza pachetul
-          </Link>
+
+          <ul className="mt-16 space-y-0 lg:max-w-4xl">
+            {faqs.map((f, i) => (
+              <Reveal
+                key={f.q}
+                as="li"
+                delay={i * 0.05}
+                className="group border-t border-[var(--line)] last:border-b"
+              >
+                <details className="group/details">
+                  <summary className="flex cursor-pointer list-none items-center justify-between py-6 text-lg text-[var(--fg)] transition-colors hover:text-[var(--accent)] [&::-webkit-details-marker]:hidden">
+                    <span>{f.q}</span>
+                    <span className="ml-4 font-mono text-2xl text-[var(--fg-dim)] transition-transform group-open/details:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p className="pb-6 text-base leading-7 text-[var(--fg-muted)] lg:max-w-3xl">
+                    {f.a}
+                  </p>
+                </details>
+              </Reveal>
+            ))}
+          </ul>
         </div>
       </section>
     </SiteFrame>

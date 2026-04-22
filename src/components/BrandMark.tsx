@@ -13,7 +13,7 @@ export function BrandMark({ className = "" }: BrandMarkProps) {
         width={720}
         height={169}
         priority
-        className="h-8 w-auto sm:h-9"
+        className="invert-logo h-6 w-auto sm:h-7"
       />
     </div>
   );

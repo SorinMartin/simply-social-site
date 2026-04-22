@@ -1,135 +1,163 @@
 import type { Metadata } from "next";
 import { SiteFrame } from "@/components/SiteFrame";
+import { Reveal, RevealText } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact — Hai sa vorbim",
   description:
-    "Contacteaza Simply Social pentru pachetul unic de 299 EUR/luna: 20 postari pe Facebook si Instagram.",
+    "Programeaza o discutie cu Simply Social. Activam pachetul unic de 299 EUR/luna pentru Facebook si Instagram.",
 };
 
-type ContactItem = {
-  title: string;
-  value: string;
-  href?: string;
-};
+type Detail = { label: string; value: string; href?: string };
 
-const contactItems: ContactItem[] = [
+const details: Detail[] = [
   {
-    title: "Pachet",
-    value: "299 EUR/luna | 20 postari | Facebook + Instagram",
-  },
-  {
-    title: "Email",
+    label: "Email",
     value: "contact@simplysocial.ro",
     href: "mailto:contact@simplysocial.ro",
   },
-  {
-    title: "Program",
-    value: "Luni - Vineri, 09:00 - 18:00",
-  },
-  {
-    title: "Raspuns estimat",
-    value: "In maximum 24 de ore lucratoare",
-  },
+  { label: "Program", value: "Luni — Vineri, 09:00 — 18:00" },
+  { label: "Raspuns", value: "In maximum 24h lucratoare" },
+  { label: "Pachet", value: "299 EUR / luna · 20 postari · FB + IG" },
 ];
 
 export default function ContactPage() {
   return (
     <SiteFrame pathname="/contact">
-      <section className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-slate-200/80 bg-white p-7 shadow-sm sm:p-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-            Contact
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-            Hai sa activam pachetul tau de 299 EUR/luna.
+      <section className="relative overflow-hidden pt-40">
+        <div
+          aria-hidden
+          className="blob left-[30%] top-[20%] h-[360px] w-[360px] bg-[var(--accent)]/10"
+        />
+        <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12">
+          <p className="eyebrow">04 · Contact</p>
+          <h1 className="mt-8 font-display text-[clamp(3rem,10vw,10rem)]">
+            <span className="block">
+              <RevealText text="hai sa" />
+            </span>
+            <span className="block font-serif-italic text-[var(--fg-muted)]">
+              <RevealText text="vorbim." delay={0.15} />
+            </span>
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            Spune-ne ce tip de business ai, iar noi pregatim continutul astfel
-            incat prezenta ta pe Facebook si Instagram sa fie coerenta,
-            constanta si profesionala.
+          <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--fg-muted)]">
+            Spune-ne ce faci si de cand vrei sa publicam. Raspundem in maximum
+            24h si trimitem intrebarile care conteaza.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
-          <aside className="rounded-3xl border border-slate-200/80 bg-white p-7 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-900">Date de contact</h2>
-            <div className="mt-6 space-y-5">
-              {contactItems.map((item) => (
-                <div key={item.title}>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    {item.title}
-                  </p>
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="mt-2 block text-sm font-medium text-slate-700 transition-colors hover:text-slate-900"
-                    >
-                      {item.value}
-                    </a>
-                  ) : (
-                    <p className="mt-2 text-sm font-medium text-slate-700">
-                      {item.value}
+      <section className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
+        <div className="grid gap-16 lg:grid-cols-[0.6fr_1fr]">
+          <Reveal className="flex flex-col gap-10">
+            <div>
+              <p className="eyebrow">Detalii</p>
+              <ul className="mt-6 space-y-6">
+                {details.map((d) => (
+                  <li
+                    key={d.label}
+                    className="border-t border-[var(--line)] pt-4"
+                  >
+                    <p className="font-mono text-[11px] text-[var(--fg-dim)]">
+                      {d.label}
                     </p>
-                  )}
-                </div>
-              ))}
+                    {d.href ? (
+                      <a
+                        href={d.href}
+                        className="link-sweep mt-2 inline-block font-serif-italic text-2xl text-[var(--fg)]"
+                      >
+                        {d.value}
+                      </a>
+                    ) : (
+                      <p className="mt-2 font-serif-italic text-2xl text-[var(--fg)]">
+                        {d.value}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </aside>
+          </Reveal>
 
-          <form className="rounded-3xl border border-slate-200/80 bg-white p-7 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-900">Trimite un mesaj</h2>
+          <Reveal delay={0.1}>
+            <form className="rounded-3xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] p-8 sm:p-10">
+              <p className="eyebrow">Formular</p>
+              <h2 className="mt-4 font-display text-3xl text-[var(--fg)] sm:text-4xl">
+                scrie-ne cateva randuri
+              </h2>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <label className="space-y-2 text-sm text-slate-600">
-                <span>Nume</span>
-                <input
-                  type="text"
-                  name="name"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors focus:border-slate-500"
-                  placeholder="Numele tau"
-                />
-              </label>
-              <label className="space-y-2 text-sm text-slate-600">
-                <span>Email</span>
-                <input
-                  type="email"
+              <div className="mt-10 grid gap-6 sm:grid-cols-2">
+                <Field name="name" label="Nume" placeholder="Numele tau" />
+                <Field
                   name="email"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors focus:border-slate-500"
+                  type="email"
+                  label="Email"
                   placeholder="email@business.ro"
                 />
-              </label>
-              <label className="space-y-2 text-sm text-slate-600 sm:col-span-2">
-                <span>Nume companie</span>
-                <input
-                  type="text"
+                <Field
                   name="company"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors focus:border-slate-500"
-                  placeholder="Compania ta"
+                  label="Companie"
+                  placeholder="Ce business ai"
+                  span
                 />
-              </label>
-              <label className="space-y-2 text-sm text-slate-600 sm:col-span-2">
-                <span>Mesaj</span>
-                <textarea
-                  name="message"
-                  rows={5}
-                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors focus:border-slate-500"
-                  placeholder="Spune-ne ce faci si din ce data vrei sa incepem publicarea pe Facebook si Instagram."
-                />
-              </label>
-            </div>
+                <div className="sm:col-span-2">
+                  <label className="block">
+                    <span className="font-mono text-[11px] text-[var(--fg-dim)]">
+                      Mesaj
+                    </span>
+                    <textarea
+                      name="message"
+                      rows={5}
+                      placeholder="Spune-ne ce faci si de cand vrei sa publicam."
+                      className="mt-3 w-full resize-none border-b border-[var(--line-strong)] bg-transparent pb-2 text-base text-[var(--fg)] outline-none transition-colors placeholder:text-[var(--fg-dim)] focus:border-[var(--accent)]"
+                    />
+                  </label>
+                </div>
+              </div>
 
-            <button
-              type="submit"
-              className="mt-6 inline-flex rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-slate-800"
-            >
-              Trimite mesajul
-            </button>
-          </form>
+              <button type="submit" className="btn-primary mt-10">
+                Trimite mesajul →
+              </button>
+
+              <p className="mt-6 text-xs text-[var(--fg-dim)]">
+                Prin trimitere esti de acord cu{" "}
+                <a
+                  href="/politica-de-confidentialitate"
+                  className="link-sweep text-[var(--fg-muted)]"
+                >
+                  politica de confidentialitate
+                </a>
+                .
+              </p>
+            </form>
+          </Reveal>
         </div>
       </section>
     </SiteFrame>
+  );
+}
+
+function Field({
+  name,
+  label,
+  placeholder,
+  type = "text",
+  span = false,
+}: {
+  name: string;
+  label: string;
+  placeholder: string;
+  type?: string;
+  span?: boolean;
+}) {
+  return (
+    <label className={`block ${span ? "sm:col-span-2" : ""}`}>
+      <span className="font-mono text-[11px] text-[var(--fg-dim)]">{label}</span>
+      <input
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        className="mt-3 w-full border-b border-[var(--line-strong)] bg-transparent pb-2 text-base text-[var(--fg)] outline-none transition-colors placeholder:text-[var(--fg-dim)] focus:border-[var(--accent)]"
+      />
+    </label>
   );
 }
