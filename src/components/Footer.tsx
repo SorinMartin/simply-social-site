@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
+import { CookiePreferencesButton } from "@/components/CookieConsent";
 import { navItems } from "@/data/site";
+import { company, legalPages } from "@/data/legal";
 
 const socials = [
   { label: "Instagram", href: "https://instagram.com" },
@@ -20,10 +22,10 @@ export function Footer() {
               Gandit pentru afaceri care vor o prezenta coerenta.
             </p>
             <a
-              href="mailto:contact@simplysocial.ro"
+              href={`mailto:${company.email}`}
               className="link-sweep inline-block text-sm text-[var(--fg)]"
             >
-              contact@simplysocial.ro
+              {company.email}
             </a>
           </div>
 
@@ -58,13 +60,24 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+            </ul>
+
+            <p className="eyebrow mt-10">Legal</p>
+            <ul className="mt-5 space-y-3">
+              {legalPages.map((p) => (
+                <li key={p.href}>
+                  <Link
+                    href={p.href}
+                    className="link-sweep text-sm text-[var(--fg-muted)] hover:text-[var(--fg)]"
+                  >
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link
-                  href="/politica-de-confidentialitate"
-                  className="link-sweep text-sm text-[var(--fg-muted)]"
-                >
-                  Politica de confidentialitate
-                </Link>
+                <CookiePreferencesButton className="link-sweep text-sm text-[var(--fg-muted)] hover:text-[var(--fg)]">
+                  Preferinte cookies
+                </CookiePreferencesButton>
               </li>
             </ul>
           </div>
@@ -85,10 +98,10 @@ export function Footer() {
 
         <div className="mt-20 flex flex-col gap-4 border-t border-[var(--line)] pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-xs text-[var(--fg-dim)]">
-            © {new Date().getFullYear()} Simply Social · toate drepturile rezervate
+            © {new Date().getFullYear()} {company.name} · {company.cui} · {company.registruComertului}
           </p>
           <p className="font-mono text-xs text-[var(--fg-dim)]">
-            Bucuresti · Romania
+            {company.adresa}
           </p>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google"
 import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Cursor } from "@/components/Cursor";
+import { CookieConsent } from "@/components/CookieConsent";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -63,7 +64,7 @@ export default function RootLayout({
       <body className="grain antialiased">
         <SmoothScroll>
           <Cursor />
-          {children}
+          <CookieConsent>{children}</CookieConsent>
         </SmoothScroll>
       </body>
     </html>
