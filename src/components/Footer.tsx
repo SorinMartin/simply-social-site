@@ -4,12 +4,6 @@ import { CookiePreferencesButton } from "@/components/CookieConsent";
 import { navItems } from "@/data/site";
 import { company, legalPages } from "@/data/legal";
 
-const socials = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Facebook", href: "https://facebook.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-] as const;
-
 export function Footer() {
   return (
     <footer className="relative mt-40 border-t border-[var(--line)] px-5 pb-10 pt-20 sm:px-8 lg:px-12">
@@ -46,23 +40,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="eyebrow">Social</p>
-            <ul className="mt-5 space-y-3">
-              {socials.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-sweep text-sm text-[var(--fg)]"
-                  >
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-
-            <p className="eyebrow mt-10">Legal</p>
+            <p className="eyebrow">Legal</p>
             <ul className="mt-5 space-y-3">
               {legalPages.map((p) => (
                 <li key={p.href}>

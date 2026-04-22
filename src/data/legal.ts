@@ -1,13 +1,11 @@
 // Company + legal metadata shared across Termeni, Cookies, Privacy.
-// Update company.cui, company.registruComertului and company.adresa once
-// the entity is finalized.
 
 export const company = {
-  name: "Simply Social SRL",
+  name: "Rechyny Corp SRL",
   tradeName: "Simply Social",
-  cui: "RO00000000",
-  registruComertului: "J40/0000/2026",
-  adresa: "Bucuresti, Romania",
+  cui: "38665168",
+  registruComertului: "J20/21/2018",
+  adresa: "Sat Pricaz, nr. 36, jud. Hunedoara, cod postal 337496",
   email: "contact@simplysocial.ro",
   privacyEmail: "privacy@simplysocial.ro",
   website: "www.simplysocial.ro",
