@@ -76,10 +76,18 @@ export function Footer() {
 
         <div className="mt-20 flex flex-col gap-4 border-t border-[var(--line)] pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-xs text-[var(--fg-dim)]">
-            © {new Date().getFullYear()} {company.name} · {company.cui} · {company.registruComertului}
+            © {new Date().getFullYear()} Simply Social. Toate drepturile rezervate.
           </p>
           <p className="font-mono text-xs text-[var(--fg-dim)]">
-            {company.adresa}
+            Creat de{" "}
+            <a
+              href="https://digitalwizards.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-sweep text-[var(--fg-muted)] hover:text-[var(--fg)]"
+            >
+              Digital Wizards
+            </a>
           </p>
         </div>
       </div>
