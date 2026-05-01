@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
-import { Cursor } from "@/components/Cursor";
+import { CursorMount } from "@/components/CursorMount";
 import { CookieConsent } from "@/components/CookieConsent";
 import { JsonLd } from "@/components/JsonLd";
 import { company } from "@/data/legal";
@@ -119,7 +119,7 @@ export default function RootLayout({
         <JsonLd data={organizationLd} />
         <JsonLd data={websiteLd} />
         <SmoothScroll>
-          <Cursor />
+          <CursorMount />
           <CookieConsent>{children}</CookieConsent>
         </SmoothScroll>
       </body>

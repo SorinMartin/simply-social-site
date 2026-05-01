@@ -65,9 +65,32 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="mt-10 max-w-xl text-lg leading-8 text-[var(--fg-muted)] sm:text-xl"
             >
-              Un singur pachet, 20 de postari pe luna, publicate pe Facebook si
-              Instagram. Fara abonamente stufoase, fara haos, fara improvizatii.
+              Pentru afaceri locale care vor o prezenta constanta pe Facebook si
+              Instagram, fara sa piarda 30+ ore lunar pe content. Un singur
+              pachet, livrat la fix, in fiecare luna.
             </motion.p>
+
+            <motion.ul
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.55, duration: 0.7 }}
+              className="mt-8 grid max-w-xl grid-cols-1 gap-x-8 gap-y-2 text-sm text-[var(--fg)] sm:grid-cols-2"
+              aria-label="Ce primesti in pachet"
+            >
+              {[
+                "20 postari livrate / luna",
+                "Calendar editorial vizibil",
+                "Design + copy incluse",
+                "Feedback in <24h lucratoare",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2.5">
+                  <span aria-hidden className="text-[var(--accent)]">
+                    ✓
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </motion.ul>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -84,6 +107,15 @@ export function HeroSection() {
                 Vezi ce contine
               </Link>
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.85, duration: 0.7 }}
+              className="mt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--fg-dim)]"
+            >
+              Fara contract pe termen lung · Anulezi cand vrei
+            </motion.p>
           </div>
 
           <motion.div

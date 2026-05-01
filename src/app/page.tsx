@@ -1,5 +1,6 @@
 import { DeliverablesSection } from "@/components/DeliverablesSection";
 import { FaqSection } from "@/components/FaqSection";
+import { FeedMockup } from "@/components/FeedMockup";
 import { FinalCtaSection } from "@/components/FinalCtaSection";
 import { HeroSection } from "@/components/HeroSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -70,6 +71,7 @@ export default function Home() {
       <ProblemSection />
       <SolutionSection />
       <DeliverablesSection />
+      <FeedMockup />
       <ServicesSection />
       <ProcessSection />
       <FaqSection />
