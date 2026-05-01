@@ -10,8 +10,15 @@ export function Cursor() {
   const sy = useSpring(y, { damping: 28, stiffness: 300, mass: 0.5 });
   const [hovering, setHovering] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    const isTouch = window.matchMedia("(hover: none)").matches;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (isTouch || reduce) return;
+    setEnabled(true);
+
     const move = (e: MouseEvent) => {
       x.set(e.clientX);
       y.set(e.clientY);
@@ -26,8 +33,8 @@ export function Cursor() {
       }
     };
     const leave = () => setVisible(false);
-    window.addEventListener("mousemove", move);
-    window.addEventListener("mouseover", over);
+    window.addEventListener("mousemove", move, { passive: true });
+    window.addEventListener("mouseover", over, { passive: true });
     document.addEventListener("mouseleave", leave);
     return () => {
       window.removeEventListener("mousemove", move);
@@ -35,6 +42,8 @@ export function Cursor() {
       document.removeEventListener("mouseleave", leave);
     };
   }, [x, y, visible]);
+
+  if (!enabled) return null;
 
   return (
     <>

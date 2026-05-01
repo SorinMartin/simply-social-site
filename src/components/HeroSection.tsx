@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Marquee } from "@/components/Marquee";
 import { RevealText } from "@/components/Reveal";
@@ -9,19 +9,22 @@ import { sectors } from "@/data/site";
 
 export function HeroSection() {
   const ref = useRef<HTMLElement>(null);
+  const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const yRaw = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const opacityRaw = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const y = reduce ? 0 : yRaw;
+  const opacity = reduce ? 1 : opacityRaw;
 
   return (
     <section ref={ref} className="relative isolate overflow-hidden pt-32 sm:pt-40">
       <div
         aria-hidden
-        className="blob left-[-10%] top-[10%] h-[360px] w-[360px] bg-[var(--accent)]/15"
+        className="blob left-[-10%] top-[10%] hidden h-[360px] w-[360px] bg-[var(--accent)]/15 sm:block"
       />
       <div
         aria-hidden
-        className="blob right-[-8%] top-[40%] h-[320px] w-[320px] bg-[var(--warm)]/10"
+        className="blob right-[-8%] top-[40%] hidden h-[320px] w-[320px] bg-[var(--warm)]/10 sm:block"
         style={{ animationDelay: "-6s" }}
       />
 

@@ -130,6 +130,24 @@ a:focus-visible {
   opacity: 0.5;
   pointer-events: none;
   animation: float-blob 14s ease-in-out infinite;
+  /* Promote to GPU layer so blur stays cheap during paint. */
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Lighter blobs on mobile — 80px blur is expensive on low-power GPUs. */
+@media (max-width: 640px) {
+  .blob {
+    filter: blur(48px);
+    opacity: 0.35;
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob {
+    animation: none;
+  }
 }
 
 /* Marquee */

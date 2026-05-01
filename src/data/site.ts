@@ -143,6 +143,45 @@ export const serviceInclusions = [
   },
 ] as const;
 
+export const deliverables = [
+  {
+    metric: "20",
+    unit: "postari / luna",
+    title: "Volum predictibil",
+    body: "Numar fix, livrate intr-un calendar editorial vizibil din prima zi a lunii.",
+  },
+  {
+    metric: "2",
+    unit: "canale active",
+    title: "Facebook + Instagram",
+    body: "Publicare nativa pe ambele platforme, cu formate adaptate fiecareia.",
+  },
+  {
+    metric: "<24h",
+    unit: "raspuns la feedback",
+    title: "Comunicare rapida",
+    body: "Mentinem timpul de raspuns sub o zi lucratoare pe toate revizuirile.",
+  },
+  {
+    metric: "1",
+    unit: "raport / luna",
+    title: "Vizibilitate completa",
+    body: "Recap lunar cu ce am publicat, cifre relevante si ce propunem urmator.",
+  },
+  {
+    metric: "0",
+    unit: "costuri ascunse",
+    title: "Pret fix garantat",
+    body: "299 EUR / luna fara TVA. Fara cresteri, fara costuri suplimentare.",
+  },
+  {
+    metric: "0",
+    unit: "luni minime",
+    title: "Fara contract lung",
+    body: "Colaborare lunara. Continui cand vrei, te opresti cand vrei.",
+  },
+] as const;
+
 export const sectors = [
   "Business-uri locale",
   "Clinici",
