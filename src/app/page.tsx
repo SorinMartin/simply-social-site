@@ -19,6 +19,7 @@ const serviceLd = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Administrare social media",
+  name: "Pachet Simply Social — 20 postări/lună",
   provider: {
     "@type": "Organization",
     name: "Simply Social",

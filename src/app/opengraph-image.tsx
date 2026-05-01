@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Simply Social — Social media, fara complicatii";
+export const alt = "Simply Social — Social media, fără complicații";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -68,8 +68,8 @@ export default async function Image() {
         >
           <span>social media,</span>
           <span style={{ display: "flex", gap: "20px" }}>
-            <span style={{ fontStyle: "italic", color: "#a8a196" }}>fara</span>
-            <span>complicatii.</span>
+            <span style={{ fontStyle: "italic", color: "#a8a196" }}>fără</span>
+            <span>complicații.</span>
           </span>
         </div>
 
@@ -85,7 +85,7 @@ export default async function Image() {
             color: "#f4efe7",
           }}
         >
-          <span>20 postari / luna · Facebook + Instagram</span>
+          <span>20 postări / lună · Facebook + Instagram</span>
           <span
             style={{
               display: "flex",
@@ -99,7 +99,7 @@ export default async function Image() {
               fontWeight: 500,
             }}
           >
-            299€ / luna
+            299€ / lună
           </span>
         </div>
       </div>

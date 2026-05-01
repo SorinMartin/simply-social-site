@@ -8,14 +8,14 @@ export function FinalCtaSection() {
   return (
     <section className="relative overflow-hidden border-t border-[var(--line)] py-40">
       <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12">
-        <p className="eyebrow">Urmatorul pas</p>
+        <p className="eyebrow">Următorul pas</p>
 
         <h2 className="mt-8 font-display text-[clamp(3.5rem,13vw,13rem)] leading-[0.88]">
           <span className="block">
-            <RevealText text="hai sa" />
+            <RevealText text="hai să" />
           </span>
           <span className="block font-serif-italic text-[var(--accent)]">
-            <RevealText text="incepem." delay={0.15} />
+            <RevealText text="începem." delay={0.15} />
           </span>
         </h2>
 
@@ -27,12 +27,12 @@ export function FinalCtaSection() {
           className="mt-16 grid gap-10 border-t border-[var(--line)] pt-12 lg:grid-cols-[1fr_auto] lg:items-end"
         >
           <p className="max-w-xl text-lg leading-8 text-[var(--fg-muted)]">
-            Spune-ne ce faci si de cand vrei sa publicam. Iti trimitem
-            calendarul lunar in 3 zile lucratoare si pornim.
+            Spune-ne ce faci și de când vrei să publicăm. Îți trimitem
+            calendarul lunar în 3 zile lucrătoare și pornim.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/contact" className="btn-primary">
-              Programeaza o discutie →
+              Programează o discuție →
             </Link>
             <a href="mailto:contact@simplysocial.ro" className="btn-ghost">
               contact@simplysocial.ro

@@ -23,15 +23,15 @@ export function ProblemSection() {
           <motion.div style={{ y: labelY }}>
             <p className="eyebrow">Problema</p>
             <h2 className="mt-6 font-display text-5xl sm:text-6xl">
-              <RevealText text="ce opreste" />
+              <RevealText text="ce oprește" />
               <br />
               <span className="font-serif-italic text-[var(--fg-muted)]">
                 <RevealText text="un brand local?" delay={0.1} />
               </span>
             </h2>
             <p className="mt-6 max-w-sm text-base leading-7 text-[var(--fg-muted)]">
-              Trei lucruri se repeta in conversatiile cu clienti. Le rezolvam direct,
-              fara detururi.
+              Trei lucruri se repetă în conversațiile cu clienți. Le rezolvăm direct,
+              fără detururi.
             </p>
           </motion.div>
         </div>

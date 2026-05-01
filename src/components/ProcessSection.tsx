@@ -12,7 +12,7 @@ export function ProcessSection() {
           <div>
             <p className="eyebrow">Proces</p>
             <h2 className="mt-6 font-display text-5xl sm:text-7xl">
-              <RevealText text="patru pasi," />
+              <RevealText text="patru pași," />
               <br />
               <span className="font-serif-italic">
                 <RevealText text="zero haos." delay={0.12} />

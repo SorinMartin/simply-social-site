@@ -44,7 +44,7 @@ export function HeroSection() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--accent)]" />
               </span>
-              <span className="eyebrow">Agentie social media · Bucuresti</span>
+              <span className="eyebrow">Agenție social media · București</span>
             </motion.div>
 
             <h1 className="mt-10 font-display text-[clamp(2.8rem,7.6vw,8rem)]">
@@ -53,9 +53,9 @@ export function HeroSection() {
               </span>
               <span className="block">
                 <span className="font-serif-italic text-[var(--fg-muted)]">
-                  <RevealText text="fara" delay={0.15} />
+                  <RevealText text="fără" delay={0.15} />
                 </span>{" "}
-                <RevealText text="complicatii." delay={0.25} />
+                <RevealText text="complicații." delay={0.25} />
               </span>
             </h1>
 
@@ -65,9 +65,9 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="mt-10 max-w-xl text-lg leading-8 text-[var(--fg-muted)] sm:text-xl"
             >
-              Pentru afaceri locale care vor o prezenta constanta pe Facebook si
-              Instagram, fara sa piarda 30+ ore lunar pe content. Un singur
-              pachet, livrat la fix, in fiecare luna.
+              Pentru afaceri locale care vor o prezență constantă pe Facebook și
+              Instagram, fără să piardă 30+ ore lunar pe conținut. Un singur
+              pachet, livrat la fix, în fiecare lună.
             </motion.p>
 
             <motion.ul
@@ -75,13 +75,13 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.7 }}
               className="mt-8 grid max-w-xl grid-cols-1 gap-x-8 gap-y-2 text-sm text-[var(--fg)] sm:grid-cols-2"
-              aria-label="Ce primesti in pachet"
+              aria-label="Ce primești în pachet"
             >
               {[
-                "20 postari livrate / luna",
+                "20 postări livrate / lună",
                 "Calendar editorial vizibil",
                 "Design + copy incluse",
-                "Feedback in <24h lucratoare",
+                "Feedback în <24h lucrătoare",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2.5">
                   <span aria-hidden className="text-[var(--accent)]">
@@ -104,7 +104,7 @@ export function HeroSection() {
                 <span aria-hidden>→</span>
               </Link>
               <Link href="/servicii" className="btn-ghost">
-                Vezi ce contine
+                Vezi ce conține
               </Link>
             </motion.div>
 
@@ -114,7 +114,7 @@ export function HeroSection() {
               transition={{ delay: 0.85, duration: 0.7 }}
               className="mt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--fg-dim)]"
             >
-              Fara contract pe termen lung · Anulezi cand vrei
+              Fără contract pe termen lung · Anulezi când vrei
             </motion.p>
           </div>
 
@@ -131,11 +131,11 @@ export function HeroSection() {
                   299<span className="text-[var(--fg-muted)]">€</span>
                 </p>
                 <p className="mt-1 font-mono text-[11px] text-[var(--fg-muted)]">
-                  per luna / fara TVA
+                  per lună / fără TVA
                 </p>
                 <div className="mt-6 space-y-2.5 border-t border-[var(--line)] pt-5">
                   {[
-                    "20 postari pe luna",
+                    "20 postări pe lună",
                     "Design + copy inclus",
                     "Facebook + Instagram",
                     "Calendar editorial lunar",

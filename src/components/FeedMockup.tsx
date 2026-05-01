@@ -3,32 +3,29 @@
 import { Reveal, RevealText } from "@/components/Reveal";
 
 // Stylized "what your feed looks like" mockup — purely illustrative, no
-// real client data. Three sample posts shown as Instagram-style cards.
+// real client data. Three sample single-image posts to reflect the actual
+// package (20 single image posts / month).
 
 type SamplePost = {
   caption: string;
   meta: string;
-  format: "Carusel" | "Single" | "Reels";
   accent: "lime" | "warm" | "ivory";
 };
 
 const samples: SamplePost[] = [
   {
-    caption: "Lansam meniul de toamna. 5 farfurii noi, fotografie naturala.",
+    caption: "Lansăm meniul de toamnă. Cinci farfurii noi, fotografie naturală.",
     meta: "luni · 19:00",
-    format: "Carusel",
     accent: "lime",
   },
   {
-    caption: "Inainte de programare: cum te pregatesti pentru sedinta.",
+    caption: "Înainte de programare: cum te pregătești pentru ședință.",
     meta: "miercuri · 09:30",
-    format: "Single",
     accent: "ivory",
   },
   {
-    caption: "Echipa noastra in 30 de secunde — cine te primeste la usa.",
+    caption: "Echipa noastră, în câteva cuvinte — cine te primește la ușă.",
     meta: "vineri · 18:00",
-    format: "Reels",
     accent: "warm",
   },
 ];
@@ -45,7 +42,7 @@ export function FeedMockup() {
       <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-center lg:gap-24">
           <div>
-            <p className="eyebrow">Cum arata in feed</p>
+            <p className="eyebrow">Cum arată în feed</p>
             <h2 className="mt-6 font-display text-5xl sm:text-6xl">
               <RevealText text="exemple" />{" "}
               <span className="font-serif-italic text-[var(--fg-muted)]">
@@ -58,33 +55,33 @@ export function FeedMockup() {
               </span>
             </h2>
             <p className="mt-8 max-w-md text-base leading-7 text-[var(--fg-muted)]">
-              Asa arata o luna tipica de continut: trei formate care
-              alterneaza, un calendar predictibil si un look coerent
-              vizibil de la prima postare.
+              Așa arată o lună tipică de conținut: postări single image,
+              livrate într-un calendar predictibil, cu un look coerent
+              vizibil de la prima publicare.
             </p>
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
               <div>
                 <p className="font-serif-italic text-4xl text-[var(--accent)]">
-                  60%
+                  20
                 </p>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-                  caruseluri
+                  postări / lună
                 </p>
               </div>
               <div>
                 <p className="font-serif-italic text-4xl text-[var(--fg)]">
-                  25%
+                  2
                 </p>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-                  postari single
+                  canale active
                 </p>
               </div>
               <div>
                 <p className="font-serif-italic text-4xl text-[var(--warm)]">
-                  15%
+                  1
                 </p>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-                  reels
+                  calendar editorial
                 </p>
               </div>
             </div>
@@ -97,10 +94,7 @@ export function FeedMockup() {
               className="pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br from-[var(--accent)]/10 via-transparent to-[var(--warm)]/10 blur-3xl"
             />
 
-            <Reveal
-              as="div"
-              className="grid gap-5 sm:grid-cols-3"
-            >
+            <Reveal as="div" className="grid gap-5 sm:grid-cols-3">
               {samples.map((p, i) => (
                 <Reveal
                   as="article"
@@ -115,7 +109,7 @@ export function FeedMockup() {
                     <div className="absolute left-4 top-4 flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-current" />
                       <span className="font-mono text-[10px] uppercase tracking-[0.16em]">
-                        {p.format}
+                        Single image
                       </span>
                     </div>
                     <div className="absolute bottom-4 left-4 right-4">
@@ -139,8 +133,8 @@ export function FeedMockup() {
             </Reveal>
 
             <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-              Mockup ilustrativ · pachetul livreaza 20 de astfel de postari pe
-              luna
+              Mockup ilustrativ · pachetul livrează 20 de astfel de postări pe
+              lună
             </p>
           </div>
         </div>

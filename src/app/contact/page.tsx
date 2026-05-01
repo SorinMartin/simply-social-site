@@ -3,9 +3,9 @@ import { SiteFrame } from "@/components/SiteFrame";
 import { Reveal, RevealText } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Contact — Hai sa vorbim",
+  title: "Contact — Hai să vorbim",
   description:
-    "Programeaza o discutie cu Simply Social. Activam pachetul unic de 299 EUR/luna pentru Facebook si Instagram.",
+    "Programează o discuție cu Simply Social. Activăm pachetul unic de 299 EUR/lună pentru Facebook și Instagram.",
 };
 
 type Detail = { label: string; value: string; href?: string };
@@ -17,8 +17,8 @@ const details: Detail[] = [
     href: "mailto:contact@simplysocial.ro",
   },
   { label: "Program", value: "Luni — Vineri, 09:00 — 18:00" },
-  { label: "Raspuns", value: "In maximum 24h lucratoare" },
-  { label: "Pachet", value: "299 EUR / luna · 20 postari · FB + IG" },
+  { label: "Răspuns", value: "În maximum 24h lucrătoare" },
+  { label: "Pachet", value: "299 EUR / lună · 20 postări · FB + IG" },
 ];
 
 export default function ContactPage() {
@@ -33,15 +33,15 @@ export default function ContactPage() {
           <p className="eyebrow">04 · Contact</p>
           <h1 className="mt-8 font-display text-[clamp(3rem,10vw,10rem)]">
             <span className="block">
-              <RevealText text="hai sa" />
+              <RevealText text="hai să" />
             </span>
             <span className="block font-serif-italic text-[var(--fg-muted)]">
               <RevealText text="vorbim." delay={0.15} />
             </span>
           </h1>
           <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--fg-muted)]">
-            Spune-ne ce faci si de cand vrei sa publicam. Raspundem in maximum
-            24h si trimitem intrebarile care conteaza.
+            Spune-ne ce faci și de când vrei să publicăm. Răspundem în maximum
+            24h și trimitem întrebările care contează.
           </p>
         </div>
       </section>
@@ -82,11 +82,11 @@ export default function ContactPage() {
             <form className="rounded-3xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] p-8 sm:p-10">
               <p className="eyebrow">Formular</p>
               <h2 className="mt-4 font-display text-3xl text-[var(--fg)] sm:text-4xl">
-                scrie-ne cateva randuri
+                scrie-ne câteva rânduri
               </h2>
 
               <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                <Field name="name" label="Nume" placeholder="Numele tau" />
+                <Field name="name" label="Nume" placeholder="Numele tău" />
                 <Field
                   name="email"
                   type="email"
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     <textarea
                       name="message"
                       rows={5}
-                      placeholder="Spune-ne ce faci si de cand vrei sa publicam."
+                      placeholder="Spune-ne ce faci și de când vrei să publicăm."
                       className="mt-3 w-full resize-none border-b border-[var(--line-strong)] bg-transparent pb-2 text-base text-[var(--fg)] outline-none transition-colors placeholder:text-[var(--fg-dim)] focus:border-[var(--accent)]"
                     />
                   </label>
@@ -119,12 +119,12 @@ export default function ContactPage() {
               </button>
 
               <p className="mt-6 text-xs text-[var(--fg-dim)]">
-                Prin trimitere esti de acord cu{" "}
+                Prin trimitere ești de acord cu{" "}
                 <a
                   href="/politica-de-confidentialitate"
                   className="link-sweep text-[var(--fg-muted)]"
                 >
-                  politica de confidentialitate
+                  politica de confidențialitate
                 </a>
                 .
               </p>

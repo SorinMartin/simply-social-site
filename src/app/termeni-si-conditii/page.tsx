@@ -4,23 +4,23 @@ import { company } from "@/data/legal";
 import type { LegalSection } from "@/data/legal";
 
 export const metadata: Metadata = {
-  title: "Termeni si conditii",
+  title: "Termeni și condiții",
   description:
-    "Termenii si conditiile de utilizare a website-ului si a serviciilor Simply Social: obiectul contractului, pret, durata, proprietate intelectuala si solutionare a disputelor.",
+    "Termenii și condițiile de utilizare a website-ului și a serviciilor Simply Social: obiectul contractului, preț, durată, proprietate intelectuală și soluționarea disputelor.",
 };
 
 const sections: LegalSection[] = [
   {
     id: "parti",
-    title: "Partile contractului",
+    title: "Părțile contractului",
     body: [
-      `Acesti termeni guverneaza relatia dintre ${company.name} ("Simply Social", "Prestator") si orice persoana fizica sau juridica ("Client") care acceseaza website-ul sau care comanda serviciile noastre.`,
-      "Prin trimiterea unei solicitari prin formularul de contact, prin corespondenta email sau prin semnarea unui contract separat, Clientul confirma ca a citit si acceptat prezentii termeni.",
+      `Acești termeni guvernează relația dintre ${company.name} ("Simply Social", "Prestator") și orice persoană fizică sau juridică ("Client") care accesează website-ul sau care comandă serviciile noastre.`,
+      "Prin trimiterea unei solicitări prin formularul de contact, prin corespondență email sau prin semnarea unui contract separat, Clientul confirmă că a citit și acceptat prezenții termeni.",
     ],
     list: [
       { label: "Prestator", value: company.name },
       { label: "CUI", value: company.cui },
-      { label: "Reg. Comertului", value: company.registruComertului },
+      { label: "Reg. Comerțului", value: company.registruComertului },
       { label: "Sediu", value: company.adresa },
       { label: "Email", value: company.email },
     ],
@@ -29,116 +29,116 @@ const sections: LegalSection[] = [
     id: "obiect",
     title: "Obiectul contractului",
     body: [
-      "Simply Social ofera servicii de administrare social media pentru canalele Facebook si Instagram ale Clientului, prin pachetul standard prezentat pe website (\"Pachetul\").",
-      "Obligatiile concrete privind livrabilele, termenele si conditiile tehnice sunt detaliate in sectiunea urmatoare.",
+      "Simply Social oferă servicii de administrare social media pentru canalele Facebook și Instagram ale Clientului, prin pachetul standard prezentat pe website (\"Pachetul\").",
+      "Obligațiile concrete privind livrabilele, termenele și condițiile tehnice sunt detaliate în secțiunea următoare.",
     ],
   },
   {
     id: "pachet",
-    title: "Pachetul si livrabilele",
+    title: "Pachetul și livrabilele",
     body: [
-      "Pachetul standard include, pentru fiecare luna calendaristica de colaborare, urmatoarele:",
+      "Pachetul standard include, pentru fiecare lună calendaristică de colaborare, următoarele:",
     ],
     list: [
-      { label: "Postari create si publicate", value: "20 / luna" },
+      { label: "Postări create și publicate", value: "20 / lună" },
       { label: "Canale", value: "Facebook + Instagram" },
       { label: "Design grafic", value: "inclus" },
       { label: "Copywriting", value: "inclus" },
       { label: "Calendar editorial lunar", value: "inclus" },
-      { label: "Runda de feedback", value: "1 / luna" },
+      { label: "Rundă de feedback", value: "1 / lună" },
       { label: "Raport lunar", value: "inclus" },
       { label: "Gestiunea mesajelor / comentariilor", value: "neinclus" },
-      { label: "Campanii platite (ads)", value: "neinclus" },
+      { label: "Campanii plătite (ads)", value: "neinclus" },
       { label: "Sesiuni foto / video", value: "neinclus" },
     ],
   },
   {
     id: "pret",
-    title: "Pret si plata",
+    title: "Preț și plată",
     body: [
-      "Pretul Pachetului este 299 EUR pe luna, fara TVA. Facturarea se emite la inceput de luna, pentru luna respectiva.",
-      "Plata se efectueaza prin transfer bancar in termen de 7 zile de la data emiterii facturii. Echivalentul in lei se calculeaza la cursul BNR din ziua emiterii facturii.",
-      "In cazul intarzierii platii cu mai mult de 15 zile, Simply Social poate suspenda publicarea pana la regularizarea situatiei, fara obligatia de a extinde perioada facturata.",
+      "Prețul Pachetului este 299 EUR pe lună, fără TVA. Facturarea se emite la început de lună, pentru luna respectivă.",
+      "Plata se efectuează prin transfer bancar în termen de 7 zile de la data emiterii facturii. Echivalentul în lei se calculează la cursul BNR din ziua emiterii facturii.",
+      "În cazul întârzierii plății cu mai mult de 15 zile, Simply Social poate suspenda publicarea până la regularizarea situației, fără obligația de a extinde perioada facturată.",
     ],
   },
   {
     id: "durata",
-    title: "Durata si rezilierea",
+    title: "Durata și rezilierea",
     body: [
-      "Colaborarea este lunara, fara obligatii minime contractuale. Se considera reinnoita tacit pentru inca o luna in lipsa unei notificari de incetare.",
-      "Oricare dintre parti poate denunta unilateral colaborarea printr-o notificare scrisa (email) cu cel putin 15 zile calendaristice inainte de inceputul lunii urmatoare.",
-      "Simply Social poate rezilia imediat contractul in cazul in care Clientul solicita publicarea de continut ilegal, discriminatoriu, inselator sau care incalca politicile platformelor Meta.",
+      "Colaborarea este lunară, fără obligații minime contractuale. Se consideră reînnoită tacit pentru încă o lună în lipsa unei notificări de încetare.",
+      "Oricare dintre părți poate denunța unilateral colaborarea printr-o notificare scrisă (email) cu cel puțin 15 zile calendaristice înainte de începutul lunii următoare.",
+      "Simply Social poate rezilia imediat contractul în cazul în care Clientul solicită publicarea de conținut ilegal, discriminatoriu, înșelător sau care încalcă politicile platformelor Meta.",
     ],
   },
   {
     id: "ip",
-    title: "Proprietate intelectuala",
+    title: "Proprietate intelectuală",
     body: [
-      "Materialele grafice si textele create de Simply Social si livrate catre Client devin proprietatea exclusiva a Clientului dupa plata integrala a facturii lunii respective, pentru utilizare pe canalele sale social media.",
-      "Clientul garanteaza ca detine toate drepturile asupra materialelor pe care ni le furnizeaza (logo, fotografii, texte, branding) si ne acorda un drept limitat de a le folosi in executarea contractului.",
-      "Simply Social isi rezerva dreptul de a folosi lucrarile realizate, in scop de portofoliu si materiale de promovare, cu mentionarea Clientului, cu exceptia cazului in care partile convin explicit altfel.",
+      "Materialele grafice și textele create de Simply Social și livrate către Client devin proprietatea exclusivă a Clientului după plata integrală a facturii lunii respective, pentru utilizare pe canalele sale social media.",
+      "Clientul garantează că deține toate drepturile asupra materialelor pe care ni le furnizează (logo, fotografii, texte, branding) și ne acordă un drept limitat de a le folosi în executarea contractului.",
+      "Simply Social își rezervă dreptul de a folosi lucrările realizate, în scop de portofoliu și materiale de promovare, cu menționarea Clientului, cu excepția cazului în care părțile convin explicit altfel.",
     ],
   },
   {
     id: "confidentialitate",
-    title: "Confidentialitate",
+    title: "Confidențialitate",
     body: [
-      "Orice informatie comerciala, strategica sau operationala schimbata intre parti este considerata confidentiala si nu poate fi divulgata unor terti fara acordul scris al celeilalte parti.",
-      "Obligatia de confidentialitate ramane in vigoare timp de 3 ani dupa incetarea colaborarii.",
+      "Orice informație comercială, strategică sau operațională schimbată între părți este considerată confidențială și nu poate fi divulgată unor terți fără acordul scris al celeilalte părți.",
+      "Obligația de confidențialitate rămâne în vigoare timp de 3 ani după încetarea colaborării.",
     ],
   },
   {
     id: "responsabilitati",
-    title: "Responsabilitatile Clientului",
+    title: "Responsabilitățile Clientului",
     body: [
-      "Pentru ca Simply Social sa poata livra conform angajamentelor, Clientul se obliga sa:",
+      "Pentru ca Simply Social să poată livra conform angajamentelor, Clientul se obligă să:",
     ],
     list: [
-      { label: "Furnizeze informatii exacte si complete despre afacere" },
-      { label: "Asigure accesul administrativ necesar publicarii" },
-      { label: "Raspunda la solicitari in termen de maximum 3 zile lucratoare" },
-      { label: "Respecte termenele de plata agreate" },
-      { label: "Nu solicite continut ilegal, inselator sau care incalca drepturile unor terti" },
+      { label: "Furnizeze informații exacte și complete despre afacere" },
+      { label: "Asigure accesul administrativ necesar publicării" },
+      { label: "Răspundă la solicitări în termen de maximum 3 zile lucrătoare" },
+      { label: "Respecte termenele de plată agreate" },
+      { label: "Nu solicite conținut ilegal, înșelător sau care încalcă drepturile unor terți" },
     ],
   },
   {
     id: "raspundere",
-    title: "Limitarea raspunderii",
+    title: "Limitarea răspunderii",
     body: [
-      "Simply Social isi asuma o obligatie de diligenta, nu de rezultat. Nu garantam un numar specific de urmaritori, vanzari sau engagement, intrucat acestea depind de factori multipli care nu tin exclusiv de activitatea noastra.",
-      "Raspunderea maxima cumulata a Simply Social nu poate depasi echivalentul a 3 luni din valoarea Pachetului, indiferent de natura prejudiciului.",
-      "Simply Social nu raspunde pentru intreruperi, modificari de algoritm, suspendari de cont sau alte evenimente generate de platformele Meta (Facebook, Instagram) sau de terti.",
+      "Simply Social își asumă o obligație de diligență, nu de rezultat. Nu garantăm un număr specific de urmăritori, vânzări sau engagement, întrucât acestea depind de factori multipli care nu țin exclusiv de activitatea noastră.",
+      "Răspunderea maximă cumulată a Simply Social nu poate depăși echivalentul a 3 luni din valoarea Pachetului, indiferent de natura prejudiciului.",
+      "Simply Social nu răspunde pentru întreruperi, modificări de algoritm, suspendări de cont sau alte evenimente generate de platformele Meta (Facebook, Instagram) sau de terți.",
     ],
   },
   {
     id: "forta-majora",
-    title: "Forta majora",
+    title: "Forța majoră",
     body: [
-      "Niciuna dintre parti nu raspunde pentru neexecutarea obligatiilor din cauza unor evenimente de forta majora, inclusiv, dar fara a se limita la: calamitati naturale, razboi, pandemii, greve generale, caderi prelungite ale infrastructurii de internet, interdictii legale.",
-      "Partea afectata va notifica cealalta parte in cel mult 5 zile de la aparitia evenimentului.",
+      "Niciuna dintre părți nu răspunde pentru neexecutarea obligațiilor din cauza unor evenimente de forță majoră, inclusiv, dar fără a se limita la: calamități naturale, război, pandemii, greve generale, căderi prelungite ale infrastructurii de internet, interdicții legale.",
+      "Partea afectată va notifica cealaltă parte în cel mult 5 zile de la apariția evenimentului.",
     ],
   },
   {
     id: "modificari",
     title: "Modificarea termenilor",
     body: [
-      "Simply Social poate actualiza periodic prezentii termeni. Versiunea aplicabila este cea publicata pe website la data la care Clientul comanda serviciile.",
-      "Modificarile materiale vor fi comunicate in prealabil clientilor activi printr-o notificare email.",
+      "Simply Social poate actualiza periodic prezenții termeni. Versiunea aplicabilă este cea publicată pe website la data la care Clientul comandă serviciile.",
+      "Modificările materiale vor fi comunicate în prealabil clienților activi printr-o notificare email.",
     ],
   },
   {
     id: "litigii",
-    title: "Legea aplicabila si litigii",
+    title: "Legea aplicabilă și litigii",
     body: [
-      "Prezentul contract este guvernat de legea romana. Orice litigiu se va solutiona amiabil; in lipsa unei intelegeri, competenta revine instantelor din Bucuresti, Romania.",
-      "Consumatorii pot apela la platforma europeana de solutionare online a disputelor: ec.europa.eu/consumers/odr.",
+      "Prezentul contract este guvernat de legea română. Orice litigiu se va soluționa amiabil; în lipsa unei înțelegeri, competența revine instanțelor din București, România.",
+      "Consumatorii pot apela la platforma europeană de soluționare online a disputelor: ec.europa.eu/consumers/odr.",
     ],
   },
   {
     id: "contact-tc",
     title: "Contact",
     body: [
-      `Pentru orice intrebare legata de prezentii termeni, ne poti scrie la ${company.email}.`,
+      `Pentru orice întrebare legată de prezenții termeni, ne poți scrie la ${company.email}.`,
     ],
   },
 ];
@@ -150,10 +150,10 @@ export default function TermsPage() {
       eyebrow="Legal · Termeni"
       title={
         <>
-          termeni si <span className="font-serif-italic">conditii</span>.
+          termeni și <span className="font-serif-italic">condiții</span>.
         </>
       }
-      intro="Acest document stabileste regulile de utilizare a website-ului simplysocial.ro si termenii care se aplica in cazul in care devii client. L-am scris clar, fara jargon inutil, dar cu tot ce conteaza legal."
+      intro="Acest document stabilește regulile de utilizare a website-ului simplysocial.ro și termenii care se aplică în cazul în care devii client. L-am scris clar, fără jargon inutil, dar cu tot ce contează legal."
       sections={sections}
     />
   );

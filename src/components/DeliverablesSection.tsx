@@ -9,7 +9,7 @@ export function DeliverablesSection() {
       <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow">Ce primesti efectiv</p>
+            <p className="eyebrow">Ce primești efectiv</p>
             <h2 className="mt-6 font-display text-5xl sm:text-7xl">
               <RevealText text="cifre" />{" "}
               <span className="font-serif-italic text-[var(--fg-muted)]">
@@ -23,8 +23,8 @@ export function DeliverablesSection() {
             </h2>
           </div>
           <p className="max-w-md text-base leading-7 text-[var(--fg-muted)]">
-            Fara estimari, fara &quot;eventual&quot;. Tot ce iti promitem este
-            cuantificat din start si livrat lunar in aceleasi conditii.
+            Fără estimări, fără &quot;eventual&quot;. Tot ce îți promitem este
+            cuantificat din start și livrat lunar în aceleași condiții.
           </p>
         </div>
 

@@ -206,12 +206,12 @@ function CookieBanner({ open, onAcceptAll, onRejectAll, onCustomize }: BannerPro
               </p>
             </div>
             <h2 className="mt-4 font-serif-italic text-2xl text-[var(--fg)]">
-              iti respectam confidentialitatea.
+              îți respectăm confidențialitatea.
             </h2>
             <p className="mt-3 text-sm leading-6 text-[var(--fg-muted)]">
-              Folosim cookies esentiale pentru functionarea site-ului si, cu
-              acordul tau, cookies pentru analiza trafic si marketing. Iti poti
-              schimba optiunea oricand. Detalii in{" "}
+              Folosim cookies esențiale pentru funcționarea site-ului și, cu
+              acordul tău, cookies pentru analiză trafic și marketing. Îți poți
+              schimba opțiunea oricând. Detalii în{" "}
               <Link
                 href="/politica-de-cookies"
                 className="link-sweep text-[var(--fg)]"
@@ -233,7 +233,7 @@ function CookieBanner({ open, onAcceptAll, onRejectAll, onCustomize }: BannerPro
                 onClick={onCustomize}
                 className="link-sweep ml-1 text-sm text-[var(--fg-muted)] hover:text-[var(--fg)]"
               >
-                Configureaza
+                Configurează
               </button>
             </div>
           </div>
@@ -282,7 +282,7 @@ function PreferencesModal({
         <motion.div
           role="dialog"
           aria-modal="true"
-          aria-label="Preferinte cookies"
+          aria-label="Preferințe cookies"
           className="fixed inset-0 z-[70] flex items-end justify-center bg-black/70 p-4 sm:items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -301,7 +301,7 @@ function PreferencesModal({
             <button
               type="button"
               onClick={onClose}
-              aria-label="Inchide"
+              aria-label="Închide"
               className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-[var(--line-strong)] text-[var(--fg-muted)] transition-colors hover:text-[var(--fg)]"
             >
               <svg
@@ -318,32 +318,32 @@ function PreferencesModal({
             </button>
 
             <div className="border-b border-[var(--line)] p-6 sm:p-8">
-              <p className="eyebrow">Preferinte cookies</p>
+              <p className="eyebrow">Preferințe cookies</p>
               <h2 className="mt-4 font-serif-italic text-3xl text-[var(--fg)] sm:text-4xl">
-                alege ce permiti.
+                alege ce permiți.
               </h2>
               <p className="mt-3 text-sm leading-6 text-[var(--fg-muted)]">
-                Cookies esentiale sunt activate pentru ca site-ul sa functioneze
-                corect. Restul sunt optionale — le activezi doar daca vrei.
+                Cookies esențiale sunt activate pentru ca site-ul să funcționeze
+                corect. Restul sunt opționale — le activezi doar dacă vrei.
               </p>
             </div>
 
             <ul className="divide-y divide-[var(--line)]">
               <Category
-                title="Esentiale"
-                description="Strict necesare pentru functionarea site-ului si pastrarea preferintelor tale. Nu pot fi dezactivate."
+                title="Esențiale"
+                description="Strict necesare pentru funcționarea site-ului și păstrarea preferințelor tale. Nu pot fi dezactivate."
                 locked
                 checked
               />
               <Category
                 title="Analytics"
-                description="Ne ajuta sa intelegem cum este utilizat site-ul, cu date agregate si anonime. Fara identificare individuala."
+                description="Ne ajută să înțelegem cum este utilizat site-ul, cu date agregate și anonime. Fără identificare individuală."
                 checked={analytics}
                 onChange={setAnalytics}
               />
               <Category
                 title="Marketing"
-                description="Folosite pentru a masura campanii si, unde este cazul, pentru retargeting pe Meta. Active numai cu acordul tau."
+                description="Folosite pentru a măsura campanii și, unde este cazul, pentru retargeting pe Meta. Active numai cu acordul tău."
                 checked={marketing}
                 onChange={setMarketing}
               />
@@ -372,7 +372,7 @@ function PreferencesModal({
                 onClick={() => onSave({ analytics, marketing })}
                 className="btn-primary"
               >
-                Salveaza preferintele
+                Salvează preferințele
               </button>
             </div>
           </motion.div>
@@ -455,7 +455,7 @@ export function CookiePreferencesButton({
   const { openPreferences } = useConsent();
   return (
     <button type="button" onClick={openPreferences} className={className}>
-      {children ?? "Preferinte cookies"}
+      {children ?? "Preferințe cookies"}
     </button>
   );
 }

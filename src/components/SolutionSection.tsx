@@ -9,7 +9,7 @@ export function SolutionSection() {
       <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow">Solutia</p>
+            <p className="eyebrow">Soluția</p>
             <h2 className="mt-6 font-display text-5xl sm:text-7xl">
               <RevealText text="un ritm" />
               <br />
@@ -19,8 +19,8 @@ export function SolutionSection() {
             </h2>
           </div>
           <p className="max-w-md text-base leading-7 text-[var(--fg-muted)]">
-            Nu inventam formule. Livram lunar acelasi lucru, bine facut:
-            continut planificat, publicat la timp, aliniat cu brandul tau.
+            Nu inventăm formule. Livrăm lunar același lucru, bine făcut:
+            conținut planificat, publicat la timp, aliniat cu brandul tău.
           </p>
         </div>
 

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalPage } from "@/components/LegalPage";
 import { Reveal } from "@/components/Reveal";
 import { SiteFrame } from "@/components/SiteFrame";
 import { company, lastUpdated, legalPages } from "@/data/legal";
@@ -8,13 +7,13 @@ import { company, lastUpdated, legalPages } from "@/data/legal";
 export const metadata: Metadata = {
   title: "Politica de cookies",
   description:
-    "Politica de cookies Simply Social: ce cookies folosim, categoriile lor, durata de viata si cum iti retragi consimtamantul.",
+    "Politica de cookies Simply Social: ce cookies folosim, categoriile lor, durata de viață și cum îți retragi consimțământul.",
 };
 
 type CookieRow = {
   name: string;
   provider: string;
-  category: "Esential" | "Analytics" | "Marketing";
+  category: "Esențial" | "Analytics" | "Marketing";
   purpose: string;
   duration: string;
 };
@@ -23,36 +22,36 @@ const rows: CookieRow[] = [
   {
     name: "ss-consent",
     provider: "simplysocial.ro",
-    category: "Esential",
-    purpose: "Pastreaza preferintele tale privind cookies pe acest website.",
+    category: "Esențial",
+    purpose: "Păstrează preferințele tale privind cookies pe acest website.",
     duration: "12 luni",
   },
   {
     name: "__host-session",
     provider: "simplysocial.ro",
-    category: "Esential",
-    purpose: "Mentine sesiunea functionala pe durata vizitei.",
+    category: "Esențial",
+    purpose: "Menține sesiunea funcțională pe durata vizitei.",
     duration: "sesiune",
   },
   {
     name: "_vercel_analytics",
     provider: "Vercel Analytics",
     category: "Analytics",
-    purpose: "Numara vizitele si sursele de trafic, fara identificare personala.",
+    purpose: "Numără vizitele și sursele de trafic, fără identificare personală.",
     duration: "14 luni",
   },
   {
     name: "_plausible",
     provider: "Plausible Analytics",
     category: "Analytics",
-    purpose: "Analiza agregata a traficului, fara cookies persistente.",
+    purpose: "Analiză agregată a traficului, fără cookies persistente.",
     duration: "sesiune",
   },
   {
     name: "_fbp",
     provider: "Meta Platforms",
     category: "Marketing",
-    purpose: "Masurarea campaniilor Meta si retargeting, cand acesta este activ.",
+    purpose: "Măsurarea campaniilor Meta și retargeting, când acesta este activ.",
     duration: "90 zile",
   },
 ];
@@ -62,42 +61,42 @@ const sections = [
     id: "ce-sunt",
     title: "Ce sunt cookies",
     body: [
-      "Cookies sunt fisiere text mici pe care un website le salveaza in browserul tau pentru a-si aminti informatii intre vizite: preferinte, sesiune de navigare sau statistici agregate.",
-      "Folosim cookies proprii (generate direct de simplysocial.ro) si cookies ale unor furnizori terti (analytics, platforme publicitare). Pe toate le tratam unitar conform prezentei politici.",
+      "Cookies sunt fișiere text mici pe care un website le salvează în browserul tău pentru a-și aminti informații între vizite: preferințe, sesiune de navigare sau statistici agregate.",
+      "Folosim cookies proprii (generate direct de simplysocial.ro) și cookies ale unor furnizori terți (analytics, platforme publicitare). Pe toate le tratăm unitar conform prezentei politici.",
     ],
   },
   {
     id: "categorii",
     title: "Categoriile pe care le folosim",
     body: [
-      "Gestionam cookies in trei categorii. Numai cele esentiale sunt active automat; pentru celelalte iti cerem acordul explicit.",
+      "Gestionăm cookies în trei categorii. Numai cele esențiale sunt active automat; pentru celelalte îți cerem acordul explicit.",
     ],
     list: [
-      { label: "Esentiale", value: "necesare — fara consimtamant" },
-      { label: "Analytics", value: "cu consimtamant" },
-      { label: "Marketing", value: "cu consimtamant" },
+      { label: "Esențiale", value: "necesare — fără consimțământ" },
+      { label: "Analytics", value: "cu consimțământ" },
+      { label: "Marketing", value: "cu consimțământ" },
     ],
   },
   {
     id: "detaliu",
     title: "Cookies specifice",
     body: [
-      "Mai jos sunt cookies pe care le putem seta pe dispozitivul tau. Unele sunt setate doar daca activezi respectiva categorie.",
+      "Mai jos sunt cookies pe care le putem seta pe dispozitivul tău. Unele sunt setate doar dacă activezi respectiva categorie.",
     ],
   },
   {
     id: "consimtamant",
-    title: "Cum iti dai sau retragi consimtamantul",
+    title: "Cum îți dai sau retragi consimțământul",
     body: [
-      "Prima data cand accesezi website-ul, afisam un banner de cookies. Poti alege Accept toate, Refuz toate sau sa configurezi categoriile individual.",
-      "Iti poti schimba preferintele oricand apasand pe butonul Cookies din subsolul paginii. De asemenea, iti poti retrage consimtamantul stergand cookies-urile din browser.",
+      "Prima dată când accesezi website-ul, afișăm un banner de cookies. Poți alege Accept toate, Refuz toate sau să configurezi categoriile individual.",
+      "Îți poți schimba preferințele oricând apăsând pe butonul Cookies din subsolul paginii. De asemenea, îți poți retrage consimțământul ștergând cookies-urile din browser.",
     ],
   },
   {
     id: "browser",
-    title: "Control prin setarile browserului",
+    title: "Control prin setările browserului",
     body: [
-      "Majoritatea browserelor iti permit sa blochezi sau sa stergi cookies prin setari. Iata pagini oficiale cu instructiuni:",
+      "Majoritatea browserelor îți permit să blochezi sau să ștergi cookies prin setări. Iată pagini oficiale cu instrucțiuni:",
     ],
     list: [
       { label: "Google Chrome", value: "support.google.com/chrome" },
@@ -108,9 +107,9 @@ const sections = [
   },
   {
     id: "terti",
-    title: "Furnizori terti",
+    title: "Furnizori terți",
     body: [
-      "Anumite cookies sunt setate de furnizori terti care au propria lor politica de confidentialitate si cookies. Iti recomandam sa le consulti inainte de a activa respectivele categorii.",
+      "Anumite cookies sunt setate de furnizori terți care au propria lor politică de confidențialitate și cookies. Îți recomandăm să le consulți înainte de a activa respectivele categorii.",
     ],
     list: [
       { label: "Vercel Analytics", value: "vercel.com/legal" },
@@ -120,22 +119,22 @@ const sections = [
   },
   {
     id: "modificari-cookies",
-    title: "Modificari ale politicii",
+    title: "Modificări ale politicii",
     body: [
-      "Putem actualiza aceasta politica pentru a reflecta schimbari in instrumentele pe care le folosim sau in cerintele legale. Versiunea curenta este afisata in partea de sus a paginii.",
+      "Putem actualiza această politică pentru a reflecta schimbări în instrumentele pe care le folosim sau în cerințele legale. Versiunea curentă este afișată în partea de sus a paginii.",
     ],
   },
   {
     id: "contact-cookies",
     title: "Contact",
     body: [
-      `Pentru orice intrebare legata de aceasta politica ne poti scrie la ${company.privacyEmail}.`,
+      `Pentru orice întrebare legată de această politică ne poți scrie la ${company.privacyEmail}.`,
     ],
   },
 ];
 
 const intro =
-  "Acest document explica ce cookies foloseste simplysocial.ro, de ce sunt necesare si cum iti controlezi consimtamantul. Este complementar Politicii de confidentialitate.";
+  "Acest document explică ce cookies folosește simplysocial.ro, de ce sunt necesare și cum îți controlezi consimțământul. Este complementar Politicii de confidențialitate.";
 
 export default function CookiesPage() {
   return (
@@ -147,7 +146,7 @@ export default function CookiesPage() {
         </h1>
         <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-[var(--fg-muted)]">
           <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-            Versiunea curenta · {lastUpdated}
+            Versiunea curentă · {lastUpdated}
           </span>
         </div>
         <p className="mt-10 max-w-3xl text-base leading-8 text-[var(--fg)] sm:text-lg">
@@ -236,7 +235,7 @@ export default function CookiesPage() {
                               <Th>Nume</Th>
                               <Th>Furnizor</Th>
                               <Th>Categorie</Th>
-                              <Th>Durata</Th>
+                              <Th>Durată</Th>
                             </tr>
                           </thead>
                           <tbody>
@@ -257,7 +256,7 @@ export default function CookiesPage() {
                                 <Td>
                                   <span
                                     className={`inline-flex rounded-full border px-2 py-0.5 text-[11px] ${
-                                      r.category === "Esential"
+                                      r.category === "Esențial"
                                         ? "border-[var(--line-strong)] text-[var(--fg)]"
                                         : r.category === "Analytics"
                                           ? "border-[var(--accent)]/40 text-[var(--accent)]"

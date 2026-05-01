@@ -12,8 +12,8 @@ export function Footer() {
           <div className="space-y-5">
             <BrandMark />
             <p className="max-w-xs text-sm leading-7 text-[var(--fg-muted)]">
-              Social media, fara complicatii. Un singur pachet, lunar.
-              Gandit pentru afaceri care vor o prezenta coerenta.
+              Social media, fără complicații. Un singur pachet, lunar.
+              Gândit pentru afaceri care vor o prezență coerentă.
             </p>
             <a
               href={`mailto:${company.email}`}
@@ -54,7 +54,7 @@ export function Footer() {
               ))}
               <li>
                 <CookiePreferencesButton className="link-sweep text-sm text-[var(--fg-muted)] hover:text-[var(--fg)]">
-                  Preferinte cookies
+                  Preferințe cookies
                 </CookiePreferencesButton>
               </li>
             </ul>
@@ -66,10 +66,10 @@ export function Footer() {
               299 <span className="text-[var(--fg-muted)]">eur</span>
             </p>
             <p className="mt-1 text-sm text-[var(--fg-muted)]">
-              per luna, 20 postari, FB + IG
+              per lună, 20 postări, FB + IG
             </p>
             <Link href="/contact" className="btn-primary mt-6">
-              Activeaza pachetul
+              Activează pachetul
             </Link>
           </div>
         </div>

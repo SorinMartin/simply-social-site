@@ -9,17 +9,17 @@ export function FaqSection() {
       <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-24">
           <div>
-            <p className="eyebrow">Intrebari frecvente</p>
+            <p className="eyebrow">Întrebări frecvente</p>
             <h2 className="mt-6 font-display text-5xl sm:text-6xl">
-              <RevealText text="raspunsuri" />
+              <RevealText text="răspunsuri" />
               <br />
               <span className="font-serif-italic text-[var(--fg-muted)]">
                 <RevealText text="directe." delay={0.1} />
               </span>
             </h2>
             <p className="mt-8 max-w-xs text-sm leading-7 text-[var(--fg-muted)]">
-              Daca ai o intrebare in plus, scrie-ne pe email — raspundem in
-              aceeasi zi lucratoare.
+              Dacă ai o întrebare în plus, scrie-ne pe email — răspundem în
+              aceeași zi lucrătoare.
             </p>
           </div>
 

@@ -33,7 +33,7 @@ export function ServicesSection() {
               299<span className="text-[var(--fg-muted)]">€</span>
             </p>
             <p className="mt-2 font-mono text-xs text-[var(--fg-muted)]">
-              per luna · fara TVA · fara contract pe termen lung
+              per lună · fără TVA · fără contract pe termen lung
             </p>
             <p className="mt-8 max-w-md text-base leading-7 text-[var(--fg-muted)]">
               {pack.description}
@@ -41,7 +41,7 @@ export function ServicesSection() {
 
             <div className="mt-10 flex flex-wrap gap-3">
               <Link href="/contact" className="btn-primary">
-                Activeaza pachetul →
+                Activează pachetul →
               </Link>
               <Link href="/servicii" className="btn-ghost">
                 Vezi detaliile

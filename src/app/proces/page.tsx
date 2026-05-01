@@ -5,34 +5,34 @@ import { Reveal, RevealText } from "@/components/Reveal";
 import { processSteps } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Proces — Cum lucram impreuna",
+  title: "Proces — Cum lucrăm împreună",
   description:
-    "Procesul Simply Social in patru pasi: discutie initiala, plan lunar, creare continut, publicare programata.",
+    "Procesul Simply Social în patru pași: discuție inițială, plan lunar, creare conținut, publicare programată.",
 };
 
 const timeline = [
   { day: "Ziua 1", note: "apel scurt, 30 min" },
-  { day: "Ziua 2-3", note: "brief si calendar editorial" },
+  { day: "Ziua 2-3", note: "brief și calendar editorial" },
   { day: "Ziua 4-10", note: "design + copy + review" },
-  { day: "Ziua 10-30", note: "publicare programata" },
+  { day: "Ziua 10-30", note: "publicare programată" },
 ] as const;
 
 const commitments = [
   {
-    title: "Transparenta",
-    body: "Vezi calendarul inainte sa publicam. Fara surprize, fara texte pe care nu le-ai aprobat.",
+    title: "Transparență",
+    body: "Vezi calendarul înainte să publicăm. Fără surprize, fără texte pe care nu le-ai aprobat.",
   },
   {
     title: "Ritm constant",
-    body: "20 postari, livrate lunar, la intervale regulate. Algoritmul rasplateste consistenta.",
+    body: "20 postări, livrate lunar, la intervale regulate. Algoritmul răsplătește consistența.",
   },
   {
-    title: "O voce clara",
-    body: "Scriem in limbajul clientilor tai. Fara cliseu, fara jargon, fara emoji-uri inutile.",
+    title: "O voce clară",
+    body: "Scriem în limbajul clienților tăi. Fără clișeu, fără jargon, fără emoji-uri inutile.",
   },
   {
     title: "Feedback simplu",
-    body: "O runda la jumatatea lunii. Schimbam ce nu merge, mentinem ce functioneaza.",
+    body: "O rundă la jumătatea lunii. Schimbăm ce nu merge, menținem ce funcționează.",
   },
 ] as const;
 
@@ -49,15 +49,15 @@ export default function ProcessPage() {
           <p className="eyebrow">03 · Proces</p>
           <h1 className="mt-8 font-display text-[clamp(3rem,10vw,10rem)]">
             <span className="block">
-              <RevealText text="patru pasi," />
+              <RevealText text="patru pași," />
             </span>
             <span className="block font-serif-italic text-[var(--accent)]">
-              <RevealText text="o luna, un ritm." delay={0.15} />
+              <RevealText text="o lună, un ritm." delay={0.15} />
             </span>
           </h1>
           <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--fg-muted)]">
-            Am construit procesul astfel incat sa iti ocupe minimum de timp si
-            sa iti ofere maxim de vizibilitate pe partea noastra.
+            Am construit procesul astfel încât să îți ocupe minimum de timp și
+            să îți ofere maxim de vizibilitate pe partea noastră.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function ProcessPage() {
         <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
           <p className="eyebrow">Cronologie</p>
           <h2 className="mt-6 font-display text-5xl sm:text-6xl">
-            prima luna,{" "}
+            prima lună,{" "}
             <span className="font-serif-italic">pas cu pas</span>.
           </h2>
 
@@ -126,7 +126,7 @@ export default function ProcessPage() {
           <div>
             <p className="eyebrow">Angajamente</p>
             <h2 className="mt-6 font-display text-5xl">
-              <span className="font-serif-italic">ce iti promitem</span>.
+              <span className="font-serif-italic">ce îți promitem</span>.
             </h2>
           </div>
           <ul className="grid gap-px bg-[var(--line)] sm:grid-cols-2">
@@ -158,12 +158,12 @@ export default function ProcessPage() {
           <h2 className="font-display text-[clamp(3rem,10vw,9rem)]">
             <span className="block">ready?</span>
             <span className="block font-serif-italic text-[var(--accent)]">
-              hai sa pornim.
+              hai să pornim.
             </span>
           </h2>
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/contact" className="btn-primary">
-              Programeaza discutia →
+              Programează discuția →
             </Link>
             <Link href="/servicii" className="btn-ghost">
               Vezi pachetul

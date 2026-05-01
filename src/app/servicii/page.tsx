@@ -5,9 +5,9 @@ import { Reveal, RevealText } from "@/components/Reveal";
 import { faqs, sectors, serviceInclusions, servicePackages } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Servicii — Pachet social media 299 EUR/luna",
+  title: "Servicii — Pachet social media 299 EUR/lună",
   description:
-    "Detalii complete despre pachetul unic Simply Social: 20 postari pe luna, design, copy si publicare pe Facebook si Instagram.",
+    "Detalii complete despre pachetul unic Simply Social: 20 postări pe lună, design, copy și publicare pe Facebook și Instagram.",
 };
 
 export default function ServicesPage() {
@@ -32,8 +32,8 @@ export default function ServicesPage() {
             </span>
           </h1>
           <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--fg-muted)]">
-            Am pastrat un singur pachet, lunar, fara nivele sau surprize. Asa
-            stim amandoi ce livram si tu stii exact ce platesti.
+            Am păstrat un singur pachet, lunar, fără nivele sau surprize. Așa
+            știm amândoi ce livrăm și tu știi exact ce plătești.
           </p>
         </div>
       </section>
@@ -53,17 +53,17 @@ export default function ServicesPage() {
                 299<span className="text-[var(--fg-muted)]">€</span>
               </p>
               <p className="mt-2 font-mono text-xs text-[var(--fg-muted)]">
-                per luna · fara TVA · fara contract pe termen lung
+                per lună · fără TVA · fără contract pe termen lung
               </p>
               <p className="mt-8 max-w-md text-base leading-7 text-[var(--fg-muted)]">
                 {pack.description}
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Link href="/contact" className="btn-primary">
-                  Solicita pachetul →
+                  Solicită pachetul →
                 </Link>
                 <Link href="/proces" className="btn-ghost">
-                  Vezi cum lucram
+                  Vezi cum lucrăm
                 </Link>
               </div>
             </div>
@@ -94,11 +94,11 @@ export default function ServicesPage() {
         <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="eyebrow">Ce primesti lunar</p>
+              <p className="eyebrow">Ce primești lunar</p>
               <h2 className="mt-6 font-display text-5xl sm:text-6xl">
-                <RevealText text="sase livrabile," />{" "}
+                <RevealText text="șase livrabile," />{" "}
                 <span className="font-serif-italic">
-                  <RevealText text="un singur pret." delay={0.1} />
+                  <RevealText text="un singur preț." delay={0.1} />
                 </span>
               </h2>
             </div>
@@ -136,14 +136,14 @@ export default function ServicesPage() {
             <p className="eyebrow">Pentru cine</p>
             <h2 className="mt-6 font-display text-5xl">
               <span className="font-serif-italic">afaceri</span> care{" "}
-              <span className="font-serif-italic">vor sa fie vazute</span>.
+              <span className="font-serif-italic">vor să fie văzute</span>.
             </h2>
           </div>
           <div>
             <p className="text-lg leading-8 text-[var(--fg-muted)]">
               Pachetul este construit pentru business-uri locale care au un
-              serviciu clar si un public definit, dar nu au timp sa gestioneze
-              saptamanal prezenta online.
+              serviciu clar și un public definit, dar nu au timp să gestioneze
+              săptămânal prezența online.
             </p>
             <div className="mt-10 flex flex-wrap gap-2">
               {sectors.map((s) => (
@@ -162,9 +162,9 @@ export default function ServicesPage() {
       {/* FAQ */}
       <section className="border-t border-[var(--line)] bg-[var(--bg-elevated)]">
         <div className="mx-auto w-full max-w-[1400px] px-5 py-32 sm:px-8 sm:py-40 lg:px-12">
-          <p className="eyebrow">Intrebari frecvente</p>
+          <p className="eyebrow">Întrebări frecvente</p>
           <h2 className="mt-6 font-display text-5xl sm:text-6xl">
-            <span className="font-serif-italic">raspunsuri</span>, direct.
+            <span className="font-serif-italic">răspunsuri</span>, direct.
           </h2>
 
           <ul className="mt-16 space-y-0 lg:max-w-4xl">

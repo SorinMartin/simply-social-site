@@ -1,5 +1,5 @@
 export const navItems = [
-  { label: "Acasa", href: "/", index: "01" },
+  { label: "Acasă", href: "/", index: "01" },
   { label: "Servicii", href: "/servicii", index: "02" },
   { label: "Proces", href: "/proces", index: "03" },
   { label: "Contact", href: "/contact", index: "04" },
@@ -16,96 +16,96 @@ export type ServicePackage = {
 export const problemPoints = [
   {
     index: "01",
-    title: "Comunicare in salturi",
+    title: "Comunicare în salturi",
     description:
-      "Fara un ritm de publicare, brandul devine greu de remarcat in fluxul zilnic al clientilor.",
+      "Fără un ritm de publicare, brandul devine greu de remarcat în fluxul zilnic al clienților.",
   },
   {
     index: "02",
-    title: "Imagine nealiniata",
+    title: "Imagine nealiniată",
     description:
-      "Cand vizualul si mesajul variaza de la o postare la alta, perceptia de profesionalism scade.",
+      "Când vizualul și mesajul variază de la o postare la alta, percepția de profesionalism scade.",
   },
   {
     index: "03",
-    title: "Prezentare neclara",
+    title: "Prezentare neclară",
     description:
-      "Publicul are nevoie sa vada constant ce oferi, cum lucrezi si de ce merita sa te aleaga.",
+      "Publicul are nevoie să vadă constant ce oferi, cum lucrezi și de ce merită să te aleagă.",
   },
 ] as const;
 
 export const solutionPoints = [
   {
     index: "01",
-    title: "20 postari intr-un calendar clar",
-    copy: "Planificate la inceput de luna, publicate la momentul potrivit.",
+    title: "20 postări într-un calendar clar",
+    copy: "Planificate la început de lună, publicate la momentul potrivit.",
   },
   {
     index: "02",
-    title: "Facebook si Instagram",
-    copy: "Publicare dedicata pe ambele canale, fara efort din partea ta.",
+    title: "Facebook și Instagram",
+    copy: "Publicare dedicată pe ambele canale, fără efort din partea ta.",
   },
   {
     index: "03",
-    title: "Design si copy aliniate",
-    copy: "O identitate vizuala coerenta, cu texte care vorbesc brandul.",
+    title: "Design și copy aliniate",
+    copy: "O identitate vizuală coerentă, cu texte care vorbesc brandul.",
   },
   {
     index: "04",
-    title: "Prezenta care transmite incredere",
-    copy: "Un ton profesionist, constant, usor de recunoscut de clienti.",
+    title: "Prezență care transmite încredere",
+    copy: "Un ton profesionist, constant, ușor de recunoscut de clienți.",
   },
 ] as const;
 
 export const processSteps = [
   {
     index: "01",
-    title: "Discutie initiala",
+    title: "Discuție inițială",
     description:
-      "Intelegem business-ul tau, serviciile si tipul de clienti pe care vrei sa ii atragi.",
+      "Înțelegem business-ul tău, serviciile și tipul de clienți pe care vrei să îi atragi.",
     detail:
-      "Un apel de 30 de minute in care stabilim unghiul, vocea si tipul de continut care ti se potriveste.",
+      "Un apel de 30 de minute în care stabilim unghiul, vocea și tipul de conținut care ți se potrivește.",
   },
   {
     index: "02",
     title: "Plan lunar",
     description:
-      "Stabilim calendarul pentru cele 20 de postari si directia vizuala pentru luna urmatoare.",
+      "Stabilim calendarul pentru cele 20 de postări și direcția vizuală pentru luna următoare.",
     detail:
-      "Primesti un calendar editorial vizibil, cu teme, formate si date de publicare clare.",
+      "Primești un calendar editorial vizibil, cu teme, formate și date de publicare clare.",
   },
   {
     index: "03",
-    title: "Creare continut",
+    title: "Creare conținut",
     description:
-      "Pregatim design-ul si textele astfel incat paginile sa reflecte clar activitatea afacerii.",
+      "Pregătim design-ul și textele astfel încât paginile să reflecte clar activitatea afacerii.",
     detail:
-      "Design + copy in acelasi limbaj vizual, cu o runda de feedback la jumatatea lunii.",
+      "Design + copy în același limbaj vizual, cu o rundă de feedback la jumătatea lunii.",
   },
   {
     index: "04",
     title: "Publicare",
     description:
-      "Programam si publicam tot continutul, ca paginile tale sa ramana constant active.",
+      "Programăm și publicăm tot conținutul, ca paginile tale să rămână constant active.",
     detail:
-      "Postare programata pe Facebook si Instagram, cu raport lunar transparent.",
+      "Postare programată pe Facebook și Instagram, cu raport lunar transparent.",
   },
 ] as const;
 
 export const servicePackages: ServicePackage[] = [
   {
     name: "Pachet unic",
-    price: "299 EUR / luna",
+    price: "299 EUR / lună",
     description:
-      "Administrare social media simpla si completa pentru o prezenta eleganta si constanta.",
+      "Administrare social media simplă și completă pentru o prezență elegantă și constantă.",
     highlighted: true,
     features: [
-      "20 postari pe luna",
-      "Publicare pe Facebook si Instagram",
+      "20 postări pe lună",
+      "Publicare pe Facebook și Instagram",
       "Design inclus",
       "Copy inclus",
       "Calendar editorial lunar",
-      "Comunicare constanta si profesionala",
+      "Comunicare constantă și profesională",
     ],
   },
 ];
@@ -113,72 +113,72 @@ export const servicePackages: ServicePackage[] = [
 export const serviceInclusions = [
   {
     index: "01",
-    title: "Strategia lunara",
-    body: "Teme, formate, distributie. Totul gandit dinainte, fara improvizatie saptamanala.",
+    title: "Strategia lunară",
+    body: "Teme, formate, distribuție. Totul gândit dinainte, fără improvizație săptămânală.",
   },
   {
     index: "02",
     title: "Design vizual",
-    body: "Grafica construita pe identitatea ta. Coerent de la o postare la urmatoarea.",
+    body: "Grafică construită pe identitatea ta. Coerent de la o postare la următoarea.",
   },
   {
     index: "03",
     title: "Copywriting",
-    body: "Texte scurte, clare, care vorbesc in limbajul clientilor tai, nu in jargon.",
+    body: "Texte scurte, clare, care vorbesc în limbajul clienților tăi, nu în jargon.",
   },
   {
     index: "04",
-    title: "Publicare programata",
-    body: "Postam la ora potrivita pe Facebook si Instagram, fara sa te mai gandesti la asta.",
+    title: "Publicare programată",
+    body: "Postăm la ora potrivită pe Facebook și Instagram, fără să te mai gândești la asta.",
   },
   {
     index: "05",
     title: "Calendar editorial",
-    body: "Vizibil din timp, editabil, transparent. Stii mereu ce urmeaza saptamana viitoare.",
+    body: "Vizibil din timp, editabil, transparent. Știi mereu ce urmează săptămâna viitoare.",
   },
   {
     index: "06",
     title: "Raport lunar",
-    body: "Un recap simplu cu ce am publicat, ce a functionat si ce propunem luna urmatoare.",
+    body: "Un recap simplu cu ce am publicat, ce a funcționat și ce propunem luna următoare.",
   },
 ] as const;
 
 export const deliverables = [
   {
     metric: "20",
-    unit: "postari / luna",
+    unit: "postări / lună",
     title: "Volum predictibil",
-    body: "Numar fix, livrate intr-un calendar editorial vizibil din prima zi a lunii.",
+    body: "Număr fix, livrate într-un calendar editorial vizibil din prima zi a lunii.",
   },
   {
     metric: "2",
     unit: "canale active",
     title: "Facebook + Instagram",
-    body: "Publicare nativa pe ambele platforme, cu formate adaptate fiecareia.",
+    body: "Publicare nativă pe ambele platforme, cu formate adaptate fiecăreia.",
   },
   {
     metric: "<24h",
-    unit: "raspuns la feedback",
-    title: "Comunicare rapida",
-    body: "Mentinem timpul de raspuns sub o zi lucratoare pe toate revizuirile.",
+    unit: "răspuns la feedback",
+    title: "Comunicare rapidă",
+    body: "Menținem timpul de răspuns sub o zi lucrătoare pe toate revizuirile.",
   },
   {
     metric: "1",
-    unit: "raport / luna",
-    title: "Vizibilitate completa",
-    body: "Recap lunar cu ce am publicat, cifre relevante si ce propunem urmator.",
+    unit: "raport / lună",
+    title: "Vizibilitate completă",
+    body: "Recap lunar cu ce am publicat, cifre relevante și ce propunem urmator.",
   },
   {
     metric: "0",
     unit: "costuri ascunse",
-    title: "Pret fix garantat",
-    body: "299 EUR / luna fara TVA. Fara cresteri, fara costuri suplimentare.",
+    title: "Preț fix garantat",
+    body: "299 EUR / lună fără TVA. Fără creșteri, fără costuri suplimentare.",
   },
   {
     metric: "0",
     unit: "luni minime",
-    title: "Fara contract lung",
-    body: "Colaborare lunara. Continui cand vrei, te opresti cand vrei.",
+    title: "Fără contract lung",
+    body: "Colaborare lunară. Continui când vrei, te oprești când vrei.",
   },
 ] as const;
 
@@ -194,22 +194,22 @@ export const sectors = [
 export const faqs = [
   {
     q: "Am nevoie de un contract lung?",
-    a: "Nu. Colaborarea merge lunar. Continui cand vrei, te opresti cand vrei, fara penalitati.",
+    a: "Nu. Colaborarea merge lunar. Continui când vrei, te oprești când vrei, fără penalități.",
   },
   {
-    q: "Ce trebuie sa fac eu?",
-    a: "O discutie initiala si acces la paginile de Facebook si Instagram. Restul il gestionam noi.",
+    q: "Ce trebuie să fac eu?",
+    a: "O discuție inițială și acces la paginile de Facebook și Instagram. Restul îl gestionăm noi.",
   },
   {
-    q: "Pot cere modificari la postari?",
-    a: "Da. Ai o runda de feedback la jumatatea lunii inainte de publicare.",
+    q: "Pot cere modificări la postări?",
+    a: "Da. Ai o rundă de feedback la jumătatea lunii înainte de publicare.",
   },
   {
-    q: "De unde incepem daca nu am paginile active?",
-    a: "Te ajutam sa le configurezi. Pornim publicarea odata ce paginile sunt pregatite.",
+    q: "De unde începem dacă nu am paginile active?",
+    a: "Te ajutăm să le configurezi. Pornim publicarea odată ce paginile sunt pregătite.",
   },
   {
     q: "Factura este cu TVA?",
-    a: "Pretul de 299 EUR este fara TVA. Primesti factura standard la inceput de luna.",
+    a: "Prețul de 299 EUR este fără TVA. Primești factură standard la început de lună.",
   },
 ] as const;

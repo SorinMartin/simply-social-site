@@ -28,7 +28,7 @@ export function LegalPage({
         </h1>
         <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-[var(--fg-muted)]">
           <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--fg-dim)]">
-            Versiunea curenta · {lastUpdated}
+            Versiunea curentă · {lastUpdated}
           </span>
         </div>
         <p className="mt-10 max-w-3xl text-base leading-8 text-[var(--fg)] sm:text-lg">
@@ -93,7 +93,7 @@ export function LegalPage({
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--fg-muted)] sm:hidden">
-                    sectiune
+                    secțiune
                   </span>
                 </div>
                 <div>

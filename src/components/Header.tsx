@@ -43,7 +43,7 @@ export function Header({ pathname = "/" }: HeaderProps) {
         }`}
       >
         <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
-          <Link href="/" aria-label="Simply Social — Acasa" className="relative z-10">
+          <Link href="/" aria-label="Simply Social — Acasă" className="relative z-10">
             <BrandMark />
           </Link>
 
@@ -80,12 +80,12 @@ export function Header({ pathname = "/" }: HeaderProps) {
               className="hidden items-center gap-2 rounded-full border border-[var(--line-strong)] px-4 py-2 text-xs font-medium text-[var(--fg)] transition-colors hover:bg-[var(--fg)] hover:text-[var(--bg)] md:inline-flex"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
-              Programeaza discutia
+              Programează discuția
             </Link>
 
             <button
               type="button"
-              aria-label={open ? "Inchide meniul" : "Deschide meniul"}
+              aria-label={open ? "Închide meniul" : "Deschide meniul"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
               className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full border border-[var(--line-strong)] text-[var(--fg)] md:hidden"
@@ -160,7 +160,7 @@ export function Header({ pathname = "/" }: HeaderProps) {
                   onClick={() => setOpen(false)}
                   className="btn-primary w-full"
                 >
-                  Programeaza discutia
+                  Programează discuția
                 </Link>
                 <a
                   href="mailto:contact@simplysocial.ro"

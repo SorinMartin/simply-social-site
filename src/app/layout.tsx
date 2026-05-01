@@ -36,21 +36,21 @@ const SITE_URL = "https://www.simplysocial.ro";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Simply Social — Social media, fara complicatii",
+    default: "Simply Social — Social media, fără complicații",
     template: "%s · Simply Social",
   },
   description:
-    "Un singur pachet: 299 EUR/luna pentru 20 de postari pe Facebook si Instagram. Design, copy si publicare, gestionate de noi.",
+    "Un singur pachet: 299 EUR/lună pentru 20 de postări pe Facebook și Instagram. Design, copy și publicare, gestionate de noi.",
   keywords: [
-    "agentie social media",
+    "agenție social media",
     "administrare social media",
-    "postari facebook instagram",
+    "postări facebook instagram",
     "simply social",
   ],
   openGraph: {
-    title: "Simply Social — Social media, fara complicatii",
+    title: "Simply Social — Social media, fără complicații",
     description:
-      "20 postari/luna pe Facebook si Instagram, 299 EUR/luna. Design, copy si publicare incluse.",
+      "20 postări/lună pe Facebook și Instagram, 299 EUR/lună. Design, copy și publicare incluse.",
     url: SITE_URL,
     siteName: "Simply Social",
     locale: "ro_RO",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Simply Social — Social media, fara complicatii",
+    title: "Simply Social — Social media, fără complicații",
     description:
-      "20 postari/luna pe Facebook si Instagram, 299 EUR/luna. Design, copy si publicare incluse.",
+      "20 postări/lună pe Facebook și Instagram, 299 EUR/lună. Design, copy și publicare incluse.",
   },
   robots: { index: true, follow: true },
   category: "marketing",
@@ -76,7 +76,7 @@ const organizationLd = {
   logo: `${SITE_URL}/icon.png`,
   email: company.email,
   description:
-    "Agentie de social media. Pachet unic de 20 postari pe luna pe Facebook si Instagram, 299 EUR/luna.",
+    "Agenție de social media. Pachet unic de 20 postări pe lună pe Facebook și Instagram, 299 EUR/lună.",
   vatID: company.cui,
   taxID: company.cui,
   identifier: company.registruComertului,
