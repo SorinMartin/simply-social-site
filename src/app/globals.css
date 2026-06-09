@@ -261,3 +261,25 @@ a:focus-visible {
 .invert-logo {
   filter: invert(1) brightness(1.15);
 }
+
+/* ANPC / SOL compliance banners */
+.compliance-banner {
+  display: block;
+  line-height: 0;
+  opacity: 0.68;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.compliance-banner img {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+.compliance-banner:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+@media (min-width: 640px) {
+  .compliance-banner img {
+    height: 26px;
+  }
+}

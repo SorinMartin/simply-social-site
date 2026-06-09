@@ -78,6 +78,40 @@ export function Footer() {
           <p className="font-mono text-xs text-[var(--fg-dim)]">
             © {new Date().getFullYear()} Simply Social. Toate drepturile rezervate.
           </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+            <a
+              href="https://anpc.ro/ce-este-sal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ANPC — Soluționarea Alternativă a Litigiilor"
+              className="compliance-banner"
+            >
+              <img
+                src="/assets/brand/banner-anpc.webp"
+                alt="ANPC — Soluționarea Alternativă a Litigiilor"
+                width={500}
+                height={124}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <a
+              href="https://ec.europa.eu/consumers/odr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SOL — Soluționarea Online a Litigiilor"
+              className="compliance-banner"
+            >
+              <img
+                src="/assets/brand/banner-sol.webp"
+                alt="SOL — Soluționarea Online a Litigiilor"
+                width={404}
+                height={100}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
           <p className="font-mono text-xs text-[var(--fg-dim)]">
             Creat de{" "}
             <a
