@@ -80,7 +80,7 @@ export function Footer() {
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
             <a
-              href="https://anpc.ro/ce-este-sal/"
+              href="https://anpc.ro/sal"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="ANPC — Soluționarea Alternativă a Litigiilor"
